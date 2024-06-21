@@ -1,0 +1,172 @@
+2024-06-18 11:12:43,487 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-18 11:12:43,487 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-18 11:12:43,487 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-18 11:12:43,487 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-18 11:12:43,487 INFO Included extra file "/etc/supervisor/conf.d/supervisor.conf" during parsing
+2024-06-18 11:12:43,489 INFO RPC interface 'supervisor' initialized
+2024-06-18 11:12:43,489 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-06-18 11:12:43,489 INFO supervisord started with pid 1
+2024-06-18 11:12:44,495 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-18 11:12:44,498 INFO spawned: 'laravel-worker_00' with pid 7
+2024-06-18 11:12:44,502 INFO spawned: 'laravel-worker_01' with pid 8
+2024-06-18 11:12:44,504 INFO spawned: 'laravel-worker_02' with pid 9
+2024-06-18 11:12:44,506 INFO spawned: 'php-fpm' with pid 10
+2024-06-18 11:12:44,578 WARN exited: laravel-worker_01 (exit status 255; not expected)
+2024-06-18 11:12:44,578 WARN exited: laravel-worker_02 (exit status 255; not expected)
+2024-06-18 11:12:44,578 WARN exited: laravel-worker_00 (exit status 255; not expected)
+2024-06-18 11:12:45,587 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-18 11:12:45,590 INFO spawned: 'laravel-worker_00' with pid 13
+2024-06-18 11:12:45,593 INFO spawned: 'laravel-worker_01' with pid 14
+2024-06-18 11:12:45,595 INFO spawned: 'laravel-worker_02' with pid 15
+2024-06-18 11:12:45,596 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-18 11:12:45,625 WARN exited: laravel-worker_01 (exit status 255; not expected)
+2024-06-18 11:12:45,625 WARN exited: laravel-worker_00 (exit status 255; not expected)
+2024-06-18 11:12:45,625 WARN exited: laravel-worker_02 (exit status 255; not expected)
+2024-06-18 11:12:47,635 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-18 11:12:47,640 INFO spawned: 'laravel-worker_00' with pid 16
+2024-06-18 11:12:47,643 INFO spawned: 'laravel-worker_01' with pid 17
+2024-06-18 11:12:47,645 INFO spawned: 'laravel-worker_02' with pid 18
+2024-06-18 11:12:47,675 WARN exited: laravel-worker_00 (exit status 255; not expected)
+2024-06-18 11:12:47,676 WARN exited: laravel-worker_01 (exit status 255; not expected)
+2024-06-18 11:12:47,676 WARN exited: laravel-worker_02 (exit status 255; not expected)
+2024-06-18 11:12:50,687 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-18 11:12:50,687 INFO gave up: cron entered FATAL state, too many start retries too quickly
+2024-06-18 11:12:50,690 INFO spawned: 'laravel-worker_00' with pid 19
+2024-06-18 11:12:50,693 INFO spawned: 'laravel-worker_01' with pid 20
+2024-06-18 11:12:50,696 INFO spawned: 'laravel-worker_02' with pid 21
+2024-06-18 11:12:50,727 WARN exited: laravel-worker_00 (exit status 255; not expected)
+2024-06-18 11:12:50,727 WARN exited: laravel-worker_01 (exit status 255; not expected)
+2024-06-18 11:12:50,728 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2024-06-18 11:12:50,728 INFO gave up: laravel-worker_01 entered FATAL state, too many start retries too quickly
+2024-06-18 11:12:50,728 WARN exited: laravel-worker_02 (exit status 255; not expected)
+2024-06-18 11:12:51,731 INFO gave up: laravel-worker_02 entered FATAL state, too many start retries too quickly
+2024-06-18 11:13:48,934 INFO reaped unknown pid 494 (exit status 0)
+2024-06-18 11:17:13,816 INFO reaped unknown pid 677 (exit status 0)
+2024-06-20 09:54:57,668 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-20 09:54:57,668 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:54:57,668 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:54:57,668 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:54:57,668 INFO Included extra file "/etc/supervisor/conf.d/supervisor.conf" during parsing
+2024-06-20 09:54:57,673 INFO RPC interface 'supervisor' initialized
+2024-06-20 09:54:57,673 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-06-20 09:54:57,673 INFO supervisord started with pid 1
+2024-06-20 09:54:58,675 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:54:58,680 INFO spawned: 'laravel-worker_00' with pid 7
+2024-06-20 09:54:58,682 INFO spawned: 'laravel-worker_01' with pid 8
+2024-06-20 09:54:58,684 INFO spawned: 'laravel-worker_02' with pid 9
+2024-06-20 09:54:58,686 INFO spawned: 'php-fpm' with pid 10
+2024-06-20 09:54:59,180 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:54:59,180 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:00,183 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:00,185 INFO spawned: 'laravel-worker_00' with pid 25
+2024-06-20 09:55:00,185 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:00,188 INFO spawned: 'laravel-worker_02' with pid 26
+2024-06-20 09:55:00,188 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:00,189 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:00,633 INFO spawned: 'laravel-worker_01' with pid 35
+2024-06-20 09:55:00,637 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:00,638 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:01,061 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:02,937 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:02,941 INFO spawned: 'laravel-worker_00' with pid 40
+2024-06-20 09:55:02,944 INFO spawned: 'laravel-worker_01' with pid 41
+2024-06-20 09:55:02,946 INFO spawned: 'laravel-worker_02' with pid 42
+2024-06-20 09:55:03,371 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:03,371 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:03,371 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:05,380 INFO spawned: 'laravel-worker_01' with pid 55
+2024-06-20 09:55:06,814 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:06,814 INFO gave up: cron entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:06,817 INFO spawned: 'laravel-worker_00' with pid 60
+2024-06-20 09:55:06,817 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:06,819 INFO spawned: 'laravel-worker_02' with pid 61
+2024-06-20 09:55:06,820 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:07,271 INFO spawned: 'laravel-worker_01' with pid 70
+2024-06-20 09:55:07,278 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:07,278 INFO gave up: laravel-worker_02 entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:07,278 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:07,581 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:08,613 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:08,614 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:09,621 INFO spawned: 'laravel-worker_01' with pid 75
+2024-06-20 09:55:11,050 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:11,050 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:12,057 INFO spawned: 'laravel-worker_01' with pid 80
+2024-06-20 09:55:12,519 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:13,526 INFO spawned: 'laravel-worker_01' with pid 85
+2024-06-20 09:55:13,990 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:16,003 INFO spawned: 'laravel-worker_01' with pid 90
+2024-06-20 09:55:16,004 WARN received SIGQUIT indicating exit request
+2024-06-20 09:55:16,005 INFO waiting for laravel-worker_01, php-fpm to die
+2024-06-20 09:55:16,017 INFO stopped: php-fpm (exit status 0)
+2024-06-20 09:55:16,018 WARN stopped: laravel-worker_01 (terminated by SIGTERM)
+2024-06-20 09:55:25,986 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-20 09:55:25,986 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:55:25,986 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:55:25,986 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-20 09:55:25,986 INFO Included extra file "/etc/supervisor/conf.d/supervisor.conf" during parsing
+2024-06-20 09:55:25,990 INFO RPC interface 'supervisor' initialized
+2024-06-20 09:55:25,990 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-06-20 09:55:25,990 INFO supervisord started with pid 1
+2024-06-20 09:55:26,992 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:26,996 INFO spawned: 'laravel-worker_00' with pid 7
+2024-06-20 09:55:26,999 INFO spawned: 'laravel-worker_01' with pid 8
+2024-06-20 09:55:27,003 INFO spawned: 'laravel-worker_02' with pid 9
+2024-06-20 09:55:27,008 INFO spawned: 'php-fpm' with pid 10
+2024-06-20 09:55:27,426 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:27,426 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:27,426 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:28,431 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:28,434 INFO spawned: 'laravel-worker_00' with pid 25
+2024-06-20 09:55:28,437 INFO spawned: 'laravel-worker_01' with pid 26
+2024-06-20 09:55:28,440 INFO spawned: 'laravel-worker_02' with pid 27
+2024-06-20 09:55:28,441 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:28,866 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:28,867 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:28,867 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:31,084 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:31,085 INFO spawned: 'laravel-worker_00' with pid 40
+2024-06-20 09:55:31,087 INFO spawned: 'laravel-worker_01' with pid 41
+2024-06-20 09:55:31,088 INFO spawned: 'laravel-worker_02' with pid 42
+2024-06-20 09:55:31,481 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:31,481 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:31,481 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:34,492 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-20 09:55:34,492 INFO gave up: cron entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:34,497 INFO spawned: 'laravel-worker_00' with pid 55
+2024-06-20 09:55:34,500 INFO spawned: 'laravel-worker_01' with pid 56
+2024-06-20 09:55:34,503 INFO spawned: 'laravel-worker_02' with pid 57
+2024-06-20 09:55:34,913 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-20 09:55:34,913 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-20 09:55:34,913 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:34,913 INFO gave up: laravel-worker_02 entered FATAL state, too many start retries too quickly
+2024-06-20 09:55:35,916 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:35,917 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:36,923 INFO spawned: 'laravel-worker_01' with pid 70
+2024-06-20 09:55:37,374 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:38,381 INFO spawned: 'laravel-worker_01' with pid 75
+2024-06-20 09:55:39,843 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:39,843 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:40,850 INFO spawned: 'laravel-worker_01' with pid 80
+2024-06-20 09:55:42,319 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:42,319 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:43,326 INFO spawned: 'laravel-worker_01' with pid 85
+2024-06-20 09:55:44,751 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:44,752 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:45,757 INFO spawned: 'laravel-worker_01' with pid 98
+2024-06-20 09:55:47,186 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:47,187 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:48,197 INFO spawned: 'laravel-worker_01' with pid 103
+2024-06-20 09:55:49,717 INFO success: laravel-worker_01 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-20 09:55:49,717 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:50,722 INFO spawned: 'laravel-worker_01' with pid 109
+2024-06-20 09:55:51,152 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:52,164 INFO spawned: 'laravel-worker_01' with pid 114
+2024-06-20 09:55:52,647 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:54,656 INFO spawned: 'laravel-worker_01' with pid 119
+2024-06-20 09:55:55,100 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:58,107 INFO spawned: 'laravel-worker_01' with pid 130
+2024-06-20 09:55:58,552 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-20 09:55:59,554 INFO gave up: laravel-worker_01 entered FATAL state, too many start retries too quickly
+2024-06-20 09:56:13,601 INFO reaped unknown pid 257 (exit status 0)
+2024-06-20 11:35:55,968 INFO reaped unknown pid 324 (exit status 0)

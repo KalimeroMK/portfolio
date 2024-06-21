@@ -1,0 +1,52 @@
+version: "3.7"
+services:
+    app:
+        build:
+            context: docker
+            dockerfile: Dockerfile
+        container_name: portfolio_app
+        restart: unless-stopped
+        working_dir: /var/www/
+        volumes:
+            - ./:/var/www
+            - ./docker/php/conf.d/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+            - ./docker/php/conf.d/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
+            - ./docker/supervisor/supervisor_logs:/var/log/supervisor
+            - ./docker/supervisor/supervisor.conf:/etc/supervisor/conf.d/supervisor.conf
+        networks:
+            - learnhub
+
+    db:
+        image: mysql:latest
+        container_name: portfolio_mysql
+        restart: unless-stopped
+        environment:
+            - MYSQL_DATABASE=homestead
+            - MYSQL_USER=homestead
+            - MYSQL_PASSWORD=secret
+            - MYSQL_ROOT_PASSWORD=learnhub
+            - SERVICE_TAGS=dev
+            - SERVICE_NAME=mysql
+        ports:
+            - "3301:3306"
+        volumes:
+            - dbdata:/var/lib/mysql
+        networks:
+            - learnhub
+
+    nginx:
+        image: nginx:latest
+        container_name: portfolio_nginx
+        restart: unless-stopped
+        ports:
+            - "8000:80"
+        volumes:
+            - ./:/var/www
+            - ./docker/nginx:/etc/nginx/conf.d
+        networks:
+            - learnhub
+networks:
+    learnhub:
+        driver: bridge
+volumes:
+    dbdata:
