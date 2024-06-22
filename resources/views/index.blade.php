@@ -184,10 +184,7 @@
                     </span>
                                 </div>
                                 <div class="employee-tasks section-content bs" id="vtModule">
-                                    <p class="pt-2 bs">Laravel Countries is a package for Laravel, providing Almost ISO
-                                        3166_2,
-                                        3166_3, currency,
-                                        Capital and more for all countries including states and cities .</p>
+                                    <p class="pt-2 bs">{!! $contribution->description !!}</p>
                                     <div class="badges-container bs">
                                         @foreach($contribution->tags as $tag)
                                             <span
