@@ -69,7 +69,8 @@ class ContributionSeeder extends Seeder
         foreach ($contributions as $contribution) {
             $newContribution = Contribution::create([
                 'title' => $contribution['title'],
-                'description' => $contribution['description']
+                'description' => $contribution['description'],
+                'url' => $contribution['url'],
             ]);
 
             $tags = explode(', ', $contribution['tags']);
