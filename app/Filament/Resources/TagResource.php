@@ -27,11 +27,8 @@ class TagResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')
+                TextInput::make('name')
                     ->required(),
-                TextInput::make('description')
-                    ->required(),
-                UploadedFile::make('image')->required(),
             ]);
     }
 
