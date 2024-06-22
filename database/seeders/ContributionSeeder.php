@@ -16,6 +16,24 @@ class ContributionSeeder extends Seeder
 
         $contributions = [
             [
+                'title' => 'RssFeed Laravel Package',
+                'url' => 'https://github.com/KalimeroMK/RssFeed',
+                'description' => 'This package provides an easy way to parse RSS feeds and save them into your application. It offers features like fetching the entire content of an RSS feed, saving images found in the feed items, and getting the full content of each item in the feed. The package is designed to be easy to use and flexible, allowing you to customize the way you parse and save the feed items. It also provides a simple interface for fetching the feed items and displaying them in your application.',
+                'tags' => 'Laravel, Blade, OOP PHP, JavaScript, HTML5, CSS / CSS3'
+            ],
+            [
+                'title' => 'Halkbank Payment Gateway for Laravel',
+                'url' => 'https://github.com/KalimeroMK/Halk',
+                'description' => "Integrate Halkbank's online payment gateway seamlessly into your Laravel application with this dedicated package. Designed specifically for Macedonian businesses, this package provides an easy-to-use interface for integrating Halkbank payment services into your Laravel application.",
+                'tags' => 'Docker, Yml',
+            ],
+            [
+                'title' => 'E-commerce',
+                'url' => 'https://github.com/KalimeroMK/LaravelEcomm',
+                'description' => 'Fully functional laravel e-commerce solution API and Web based with Paypal/Stripe/Casys payment gateway.',
+                'tags' => 'Laravel, Blade, Payment Providers, Bootstrap, jQuery, OOP PHP, MySQL, JavaScript, HTML5, CSS / CSS3, Docker, 3rd Party Integrations'
+            ],
+            [
                 'title' => 'Laravel Countries',
                 'description' => 'Laravel Countries is a package for Laravel, providing Almost ISO 3166_2, 3166_3, currency, Capital and more for all countries including states and cities.',
                 'url' => 'https://github.com/KalimeroMK/countries',
@@ -40,29 +58,12 @@ class ContributionSeeder extends Seeder
                 'tags' => 'Laravel, PHP, JSON'
             ],
             [
-                'title' => 'E-commerce',
-                'url' => 'https://github.com/KalimeroMK/LaravelEcomm',
-                'description' => 'Fully functional laravel e-commerce solution API and Web based with Paypal/Stripe/Casys payment gateway.',
-                'tags' => 'Laravel, Blade, Payment Providers, Bootstrap, jQuery, OOP PHP, MySQL, JavaScript, HTML5, CSS / CSS3, Docker, 3rd Party Integrations'
-            ],
-            [
                 'title' => 'Docker Images',
                 'url' => 'https://github.com/KalimeroMK/docker-images',
                 'description' => 'Apache/Nginx + PHP docker image collection.',
                 'tags' => 'Laravel, Blade, OOP PHP, JavaScript, HTML5, CSS / CSS3'
             ],
-            [
-                'title' => 'RssFeed Laravel Package',
-                'url' => 'https://github.com/KalimeroMK/RssFeed',
-                'description' => 'This package provides an easy way to parse RSS feeds and save them into your application. It offers features like fetching the entire content of an RSS feed, saving images found in the feed items, and getting the full content of each item in the feed. The package is designed to be easy to use and flexible, allowing you to customize the way you parse and save the feed items. It also provides a simple interface for fetching the feed items and displaying them in your application.',
-                'tags' => 'Laravel, Blade, OOP PHP, JavaScript, HTML5, CSS / CSS3'
-            ],
-            [
-            'title' => 'Halkbank Payment Gateway for Laravel',
-            'url' => 'https://github.com/KalimeroMK/Halk',
-            'description' => "Integrate Halkbank's online payment gateway seamlessly into your Laravel application with this dedicated package. Designed specifically for Macedonian businesses, this package provides an easy-to-use interface for integrating Halkbank payment services into your Laravel application.",
-            'tags' => 'Docker, Yml',
-        ]
+
         ];
 
         foreach ($contributions as $contribution) {
