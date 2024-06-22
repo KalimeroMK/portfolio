@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Contribution extends Model
 {
+    protected $table = 'contributions';
     protected $fillable = [
         'title',
         'description',

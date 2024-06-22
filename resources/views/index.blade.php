@@ -485,7 +485,8 @@
                         I&#39;m available for work
                     </div>
 
-                    <form id="contact-form" method="POST" action="{{ route('contact.send') }}">
+                    <form id="contact-form" method="POST" action="{{ route('contact') }}">
+                        @method('POST')
                         @csrf
                         @honeypot
                         <div class="form-row">
@@ -495,7 +496,7 @@
                             </div>
                             <div class="col-12 col-xl-6 col-lg-6 col-md-6">
                                 <label>Email</label>
-                                <input class="form-control" name="_replyto" placeholder="Email" required type="email">
+                                <input class="form-control" placeholder="Email" name="email" required type="email">
                             </div>
                         </div>
 

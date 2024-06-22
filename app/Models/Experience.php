@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Experience extends Model
 {
     use HasFactory;
-
+    protected $table = 'experiences';
     protected $fillable = [
         'company',
         'employment_type',

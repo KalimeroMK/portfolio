@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Article extends Model
 {
     use HasFactory;
-
+    protected $table = 'articles';
     protected $fillable = [
         'title',
         'description',

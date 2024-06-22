@@ -20,7 +20,7 @@ class HomeController extends Controller
 
     public function send(CreateRequest $request)
     {
-        Mail::to('contact@polygraphcenter.mk')->send(new ContactMail($request->validated()));
+        Mail::to('zbogoevski@gmail.com')->send(new ContactMail($request->validated()));
         $responseMail = new ResponseMail();
         Mail::to($request->email)->send($responseMail);
 
