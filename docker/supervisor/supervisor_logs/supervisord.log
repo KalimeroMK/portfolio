@@ -170,3 +170,45 @@
 2024-06-20 09:55:59,554 INFO gave up: laravel-worker_01 entered FATAL state, too many start retries too quickly
 2024-06-20 09:56:13,601 INFO reaped unknown pid 257 (exit status 0)
 2024-06-20 11:35:55,968 INFO reaped unknown pid 324 (exit status 0)
+2024-06-21 18:23:21,185 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2024-06-21 18:23:21,186 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-21 18:23:21,186 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-21 18:23:21,186 WARN For [program:laravel-worker], redirect_stderr=true but stderr_logfile has also been set to a filename, the filename has been ignored
+2024-06-21 18:23:21,186 INFO Included extra file "/etc/supervisor/conf.d/supervisor.conf" during parsing
+2024-06-21 18:23:21,189 INFO RPC interface 'supervisor' initialized
+2024-06-21 18:23:21,189 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2024-06-21 18:23:21,189 INFO supervisord started with pid 1
+2024-06-21 18:23:22,190 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-21 18:23:22,191 INFO spawned: 'laravel-worker_00' with pid 7
+2024-06-21 18:23:22,193 INFO spawned: 'laravel-worker_01' with pid 8
+2024-06-21 18:23:22,195 INFO spawned: 'laravel-worker_02' with pid 9
+2024-06-21 18:23:22,197 INFO spawned: 'php-fpm' with pid 10
+2024-06-21 18:23:22,712 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-21 18:23:22,712 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-21 18:23:22,717 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-21 18:23:23,720 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-21 18:23:23,721 INFO spawned: 'laravel-worker_00' with pid 25
+2024-06-21 18:23:23,723 INFO spawned: 'laravel-worker_01' with pid 26
+2024-06-21 18:23:23,725 INFO spawned: 'laravel-worker_02' with pid 27
+2024-06-21 18:23:23,725 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2024-06-21 18:23:23,906 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-21 18:23:23,907 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-21 18:23:23,909 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-21 18:23:25,917 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-21 18:23:25,919 INFO spawned: 'laravel-worker_00' with pid 40
+2024-06-21 18:23:25,920 INFO spawned: 'laravel-worker_01' with pid 41
+2024-06-21 18:23:25,921 INFO spawned: 'laravel-worker_02' with pid 42
+2024-06-21 18:23:26,143 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-21 18:23:26,143 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-21 18:23:26,147 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-21 18:23:29,161 INFO spawnerr: can't find command '/usr/sbin/crond'
+2024-06-21 18:23:29,162 INFO gave up: cron entered FATAL state, too many start retries too quickly
+2024-06-21 18:23:29,163 INFO spawned: 'laravel-worker_00' with pid 55
+2024-06-21 18:23:29,164 INFO spawned: 'laravel-worker_01' with pid 56
+2024-06-21 18:23:29,165 INFO spawned: 'laravel-worker_02' with pid 57
+2024-06-21 18:23:29,442 WARN exited: laravel-worker_02 (exit status 1; not expected)
+2024-06-21 18:23:29,442 INFO gave up: laravel-worker_02 entered FATAL state, too many start retries too quickly
+2024-06-21 18:23:29,442 WARN exited: laravel-worker_00 (exit status 1; not expected)
+2024-06-21 18:23:29,442 WARN exited: laravel-worker_01 (exit status 1; not expected)
+2024-06-21 18:23:29,442 INFO gave up: laravel-worker_00 entered FATAL state, too many start retries too quickly
+2024-06-21 18:23:29,442 INFO gave up: laravel-worker_01 entered FATAL state, too many start retries too quickly
