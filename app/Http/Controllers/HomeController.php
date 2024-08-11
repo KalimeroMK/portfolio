@@ -8,6 +8,7 @@ use App\Mail\ResponseMail;
 use App\Models\Article;
 use App\Models\Contribution;
 use App\Models\Experience;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
@@ -16,7 +17,9 @@ class HomeController extends Controller
     {
         $experiences = Experience::with('tags')->get();
         $contributions = Contribution::with('tags')->get();
-        return view('index', compact('experiences', 'contributions'));
+        $user = User::first();
+        $customFields = json_decode($user->custom_fields, true);
+        return view('index', compact('experiences', 'contributions','customFields'));
     }
 
     public function send(CreateRequest $request)

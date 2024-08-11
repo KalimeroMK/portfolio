@@ -74,28 +74,7 @@
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content text-justify">
-                        <p class="tab-indent">I am a seasoned Senior Software Engineer with over 15 years of
-                            professional experience. Throughout my career, I have gained expertise in various aspects of
-                            software development, specializing in Laravel development and serving as a Technical Lead.
-                            During my tenure, I have been involved in all phases of the Software Development Life Cycle
-                            (SDLC). From designing and building complex web applications and APIs to architecting
-                            backend tools, I have demonstrated proficiency in delivering robust and scalable solutions.
-                            I am adept at performing business and technology analysis, ensuring seamless system
-                            integration, and providing custom software development services.
-                            In addition to development, I have a strong background in support and maintenance
-                            activities. I have successfully undertaken refactoring and re-engineering projects to
-                            improve the performance and maintainability of existing codebases. Through comprehensive
-                            unit testing and validation, I ensure the delivery of high-quality services.
-                            My experience extends to agile development methodologies, allowing me to efficiently design
-                            and develop high-volume software components and applications. I excel at breaking down
-                            complex business requirements into achievable technical tasks, architecting innovative
-                            solutions that align with organizational goals.
-                            Currently, I am focused on working with the Laravel PHP Framework, employing SOLID
-                            principles to create robust and maintainable codebases. I am continuously enthusiastic about
-                            learning new technologies and keeping up with industry trends.
-                            Overall, my extensive experience, technical proficiency, and passion for learning make me a
-                            valuable asset in any software development team. I am dedicated to delivering top-notch
-                            solutions and contributing to the success of projects.
+                        <p class="tab-indent">{{ $customFields['custom_field_1'] }}
                         </p>
 
                     </div>
