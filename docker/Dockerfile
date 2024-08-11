@@ -37,9 +37,3 @@ RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
 
 # Set working directory
 WORKDIR /var/www
-
-# Copy supervisor config file
-ADD supervisor/supervisor.conf /etc/supervisor/conf.d/
-
-# Command to run supervisord
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]

@@ -784,6 +784,8 @@ body {
     overflow-x: hidden;
     position: relative;
     width: 100%;
+    min-height: 100vh; /* Ensure full screen height */
+    min-width: 100vw;  /* Ensure full screen width */
 }
 
 .main-wrapper.not-found-page {
