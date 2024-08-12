@@ -16,7 +16,7 @@
     <!-- Dynamic Meta Tags -->
     <meta name="description"
           content="@if(!empty($article) && !empty($article->description))
-                       {{ $article->description }}
+                         {{ Str::limit(strip_tags($article->description), 500) }}
                    @else
                        Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
                    @endif">
@@ -28,8 +28,8 @@
                    @endif"
           property="og:title">
 
-    <meta content="@if(!empty($article) && !empty($article->description))
-                       {{ $article->description }}
+    <meta content="@if(!empty($article) && !empty($article->description)))
+                       {{ Str::limit(strip_tags($article->description), 500) }}
                    @else
                        Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
                    @endif"
@@ -59,7 +59,7 @@
           name="twitter:title">
 
     <meta content="@if(!empty($article) && !empty($article->description))
-                       {{ $article->description }}
+                                               {{ Str::limit(strip_tags($article->description), 500) }}
                    @else
                        Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
                    @endif"

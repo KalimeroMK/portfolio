@@ -74,7 +74,7 @@
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content text-justify">
-                        <p class="tab-indent">{{ $customFields['custom_field_1'] }}
+                        <p class="tab-indent">{{ $customFields['custom_field_1'] ?? ''}}
                         </p>
 
                     </div>
