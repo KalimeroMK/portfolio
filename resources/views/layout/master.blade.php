@@ -2,74 +2,24 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Dynamic Page Title -->
     <title>
-        @if(!empty($article) && !empty($article->title))
-            {{ $article->title }} | CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer
-        @else
-            CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer
-        @endif
+        {{ !empty($article->title) ? $article->title . ' | CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}
     </title>
-
     <!-- Dynamic Meta Tags -->
-    <meta name="description"
-          content="@if(!empty($article) && !empty($article->description))
-                         {{ Str::limit(strip_tags($article->description), 500) }}
-                   @else
-                       Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
-                   @endif">
-
-    <meta content="@if(!empty($article) && !empty($article->title))
-                       {{ $article->title }}
-                   @else
-                       CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer
-                   @endif"
-          property="og:title">
-
-    <meta content="@if(!empty($article) && !empty($article->description)))
-                       {{ Str::limit(strip_tags($article->description), 500) }}
-                   @else
-                       Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
-                   @endif"
-          property="og:description">
-
-    <meta content="@if(!empty($article) && !empty($article->image))
-                       {{ asset('images/articles/' . $article->image) }}
-                   @else
-                       https://zbogoevski.github.io/images/social-share.png
-                   @endif"
-          property="og:image">
-
-    <meta content="@if(!empty($article))
-                       {{ route('article', $article->id) }}
-                   @else
-                       https://zorandev.info
-                   @endif"
-          property="og:url">
-
-    <meta content="article" name="og:type">
-
-    <meta content="@if(!empty($article) && !empty($article->title))
-                       {{ $article->title }}
-                   @else
-                       CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer
-                   @endif"
-          name="twitter:title">
-
-    <meta content="@if(!empty($article) && !empty($article->description))
-                                               {{ Str::limit(strip_tags($article->description), 500) }}
-                   @else
-                       Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.
-                   @endif"
-          name="twitter:description">
-
+    <meta name="description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 500) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
+    <meta property="og:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
+    <meta property="og:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 500) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
+    <meta property="og:image" content="{{ !empty($article->image) ? asset('images/articles/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
+    <meta property="og:url" content="{{ !empty($article) ? route('article', $article->id) : 'https://zorandev.info' }}">
+    <meta name="og:type" content="article">
+    <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
+    <meta name="twitter:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 500) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
     <!-- Additional Meta Tags -->
-    <link crossorigin="anonymous" href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/style-cf.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css">
-    <!-- Other links and styles -->
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ asset('css/style-cf.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 </head>
 <body class="clearfix">
 <!-- page loading -->
