@@ -15,7 +15,8 @@
     ($article->description), 150) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years
     of professional experience. Get in touch to discuss your next project.' }}">
     <meta property="og:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
-    <meta property="og:url" content="{{ !empty($article) ? route('article', $article->id) : 'https://zorandev.info' }}">
+    <meta property="og:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info'
+    }}">
     <meta name="og:type" content="article">
     <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
     <meta name="twitter:description" content="{{ !empty($article->description) ? Str::limit(strip_tags
