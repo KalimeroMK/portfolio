@@ -5,12 +5,14 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\ArticleResource\Pages;
 use App\Models\Article;
 use App\Models\Tag;
+use Camya\Filament\Forms\Components\TitleWithSlugInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables\Actions\BulkActionGroup;
 use Filament\Tables\Actions\DeleteAction;
@@ -19,6 +21,7 @@ use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 
 class ArticleResource extends Resource
 {
@@ -32,8 +35,10 @@ class ArticleResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('title')
-                    ->required(),
+                TitleWithSlugInput::make(
+                    fieldTitle: 'title', // The name of the field in your model that stores the title.
+                    fieldSlug: 'slug',
+                ),
                 FileUpload::make('image')
                     ->required(),
                 RichEditor::make('description')

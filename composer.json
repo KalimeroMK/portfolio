@@ -9,6 +9,7 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
+    "blendbyte/filament-title-with-slug": "^1.0",
     "filament/filament": "^3.2",
     "joaopaulolndev/filament-edit-profile": "^1.0",
     "laravel/framework": "^11.9",

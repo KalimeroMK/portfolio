@@ -69,7 +69,7 @@
             @foreach($articles as $article)
             <section class="bg__javascript2" id="about">
                 <h3 class="heading">
-                    <a href="{{ route('article', $article->id) }}">
+                    <a href="{{ route('article', $article->slug) }}">
                         <i class="fa fa-address-card fa-fw custom-title-icon"></i>
                         {{ $article->title }}</a>
                 </h3>

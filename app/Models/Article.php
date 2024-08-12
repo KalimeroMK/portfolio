@@ -15,6 +15,7 @@ class Article extends Model
         'description',
         'image',
         'publish',
+        'slug',
     ];
 
     public function tags(): BelongsToMany

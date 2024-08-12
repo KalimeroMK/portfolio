@@ -37,9 +37,10 @@ class HomeController extends Controller
         return view('articles', compact('articles'));
     }
 
-    public function article($id)
+    public function article($slug)
     {
-       $article = Article::whereId($id)->first();
+        $article = Article::whereSlug($slug)->first();
         return view('article', compact('article'));
     }
+
 }
