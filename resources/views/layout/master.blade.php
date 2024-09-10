@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,3 +60,26 @@
         }
     </script>
 </head>
+
+
+<body class="clearfix">
+<!-- page loading -->
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+<!-- End -->
+<main>
+    @yield('content')
+</main>
+<!-- Footer -->
+@include('layout.footer')
+@yield('scripts')
+<!-- button -->
+<a href="#top_" id="myBtn" title="Go to top">
+    <!-- SVG code -->
+</a>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
+</body>
+</html>
