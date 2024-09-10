@@ -46,7 +46,7 @@ class HomeController extends Controller
 
     public function sitemap(): Response
     {
-        $articles = Article::latest()->take(100);
+        $articles = Article::latest()->get();
 
         return response()->view('sitemap', [
             'articles' => $articles
