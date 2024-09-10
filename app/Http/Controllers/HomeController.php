@@ -10,6 +10,7 @@ use App\Models\Contribution;
 use App\Models\Experience;
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Response;
 
 class HomeController extends Controller
 {
@@ -41,6 +42,15 @@ class HomeController extends Controller
     {
         $article = Article::whereSlug($slug)->first();
         return view('article', compact('article'));
+    }
+
+    public function sitemap(): Response
+    {
+        $articles = Article::latest()->take(100);
+
+        return response()->view('sitemap', [
+            'articles' => $articles
+        ])->header('Content-Type', 'text/xml');
     }
 
 }
