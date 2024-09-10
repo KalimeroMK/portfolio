@@ -22,3 +22,10 @@
     RewriteCond %{HTTP_HOST} ^www\.zorandev\.info$
     RewriteRule ^/?$ "http\:\/\/zorandev\.info\/" [R=301,L]
 </IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive on
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+</IfModule>
