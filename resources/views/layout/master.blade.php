@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
         {{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski | Senior Software Engineer | Laravel Expert' : 'Zoran Bogoevski | Senior Software Engineer | Laravel Expert' }}
     </title>
+
     <!-- Dynamic Meta Tags -->
     <meta name="description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
     <meta property="og:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
@@ -18,6 +17,24 @@
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ !empty($article) ? route('article', $article->slug) : url()->current() }}">
+
+    <!-- Favicon for Various Platforms -->
+    <!-- Standard Favicon -->
+    <link rel="icon" href="{{ asset('images/IOS/Icon-32.png') }}" sizes="32x32" type="image/png">
+    <link rel="icon" href="{{ asset('images/IOS/Icon-64.png') }}" sizes="64x64" type="image/png">
+
+    <!-- Apple Touch Icon for iOS -->
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-152.png') }}" sizes="152x152">
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-167.png') }}" sizes="167x167">
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-180.png') }}" sizes="180x180">
+
+    <!-- Android Icons -->
+    <link rel="icon" href="{{ asset('images/Android/Icon-36.png') }}" sizes="36x36" type="image/png">
+    <link rel="icon" href="{{ asset('images/Android/Icon-96.png') }}" sizes="96x96" type="image/png">
+    <link rel="icon" href="{{ asset('images/Android/Icon-192.png') }}" sizes="192x192" type="image/png">
+
+    <!-- Manifest for Progressive Web App (PWA) -->
+    <link rel="manifest" href="{{ asset('manifest.json') }}">
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style-cf.css') }}">
@@ -40,27 +57,4 @@
           ]
         }
     </script>
-
 </head>
-
-<body class="clearfix">
-<!-- page loading -->
-<div id="loading">
-    <div class="load-circle"><span class="one"></span></div>
-</div>
-<!-- End -->
-<main>
-    @yield('content')
-</main>
-<!-- Footer -->
-@include('layout.footer')
-@yield('scripts')
-<!-- button -->
-<a href="#top_" id="myBtn" title="Go to top">
-    <!-- SVG code -->
-</a>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script src="{{ asset('js/bootstrap.min.js') }}"></script>
-<script src="{{ asset('js/main.js') }}"></script>
-</body>
-</html>
