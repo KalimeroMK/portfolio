@@ -5,7 +5,8 @@
 
         <section class="sidebar d-flex align-items-center text-sm-left text-center p-3 pt-4 pb-4 p-sm-5">
             <div class="main-info">
-                <img alt="Zoran Bogoevski" class="rounded-circle mb-3 img-black-white" src="images/me.jpeg" width="160px">
+                <a href="{{ route('home')}}"> <img alt="Zoran Bogoevski" class="rounded-circle mb-3 img-black-white"
+                                                   src="{{asset('images/me.jpeg') }}" width="160px"></a>
                 <h1 class="heading text-white">Hi, i&#39;m <span>Zoran Bogoevski</span></h1>
                 <p class="sub-heading text-white"><span class="">Senior Software Engineer</span> | Laravel Developer</p>
                 <div class="social my-4">
