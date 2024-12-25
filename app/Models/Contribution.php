@@ -17,7 +17,6 @@ class Contribution extends Model
 
     public function tags(): BelongsToMany
     {
-        return $this->belongsToMany(Tag::class, 'contribution_tag')->withTimestamps();
+        return $this->belongsToMany(Tag::class);
     }
-
 }

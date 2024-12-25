@@ -52,10 +52,10 @@ class ExperienceResource extends Resource
                     ->required(),
                 DatePicker::make('end_date')
                     ->nullable(),
-                Select::make('tag_id')
+                Select::make('tags')
                     ->multiple()
-                    ->relationship('tags')
-                    ->options(Tag::pluck('name', 'id'))
+                    ->relationship('tags', 'name')
+                    ->preload(),
             ]);
     }
 
