@@ -16,7 +16,7 @@ class RemoveDuplicateTags extends Command
         parent::__construct();
     }
 
-    public function handle()
+    public function handle(): void
     {
         // Begin Transaction
         DB::beginTransaction();

@@ -30,9 +30,4 @@ class ResponseMail extends Mailable implements ShouldQueue
             markdown: 'emails.response',
         );
     }
-
-    public function attachments(): array
-    {
-        return [];
-    }
 }

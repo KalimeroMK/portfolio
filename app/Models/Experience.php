@@ -2,10 +2,15 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
+/**
+ * @template TFactory of Factory
+ * @extends Model<TFactory>
+ */
 class Experience extends Model
 {
     use HasFactory;
@@ -24,12 +29,19 @@ class Experience extends Model
         'end_date'
     ];
 
-
+    /**
+     * The tags that belong to the experience.
+     *
+     * @return BelongsToMany<Tag>
+     */
     public function tags(): BelongsToMany
     {
         return $this->belongsToMany(Tag::class, 'experience_tag')->withTimestamps();
     }
 
+    /**
+     * @return string[]
+     */
     protected function casts(): array
     {
         return [

@@ -9,38 +9,47 @@ use App\Models\Article;
 use App\Models\Contribution;
 use App\Models\Experience;
 use App\Models\User;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
 
 class HomeController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $experiences = Experience::with('tags')->get();
         $contributions = Contribution::with('tags')->get();
+
         $user = User::first();
-        $customFields = json_decode($user->custom_fields, true);
-        return view('index', compact('experiences', 'contributions','customFields'));
+        $customFields = $user ? json_decode($user->custom_fields ?? '{}', true) : [];
+
+        return view('index', compact('experiences', 'contributions', 'customFields'));
     }
 
-    public function send(CreateRequest $request)
+    public function send(CreateRequest $request): RedirectResponse
     {
         Mail::to('zbogoevski@gmail.com')->send(new ContactMail($request->validated()));
         $responseMail = new ResponseMail();
         Mail::to($request->email)->send($responseMail);
 
-        return redirect(env('APP_URL') . '/#contact')->with('success', 'Message sent successfully.');
+        $appUrl = config('app.url', ''); // Default to an empty string if the config is missing
+        if (!is_string($appUrl)) {
+            throw new \UnexpectedValueException('The app.url configuration value must be a string.');
+        }
+
+        return redirect($appUrl . '/#contact')->with('success', 'Message sent successfully.');
     }
 
-    public function articles()
+    public function articles(): View
     {
         $articles = Article::with('tags')->get();
         return view('articles', compact('articles'));
     }
 
-    public function article($slug)
+    public function article(string $slug): View
     {
-        $article = Article::whereSlug($slug)->first();
+        $article = Article::whereSlug($slug)->firstOrFail();
         return view('article', compact('article'));
     }
 
@@ -49,8 +58,7 @@ class HomeController extends Controller
         $articles = Article::latest()->get();
 
         return response()->view('sitemap', [
-            'articles' => $articles
+            'articles' => $articles,
         ])->header('Content-Type', 'text/xml');
     }
-
 }
