@@ -2,28 +2,21 @@
 
 namespace App\Models;
 
+use Database\Factories\TagFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Tag extends Model
 {
+    /** @use HasFactory<TagFactory> */
+
     use HasFactory;
 
     protected $table = 'tags';
     protected $fillable = [
         'name',
     ];
-
-    /**
-     * The contributions that belong to the tag.
-     *
-     * @return BelongsToMany<Tag, Contribution>
-     */
-    public function contributions(): BelongsToMany
-    {
-        return $this->belongsToMany(Contribution::class, 'contribution_tag');
-    }
 
     /**
      * The experiences that belong to the tag.
@@ -46,13 +39,19 @@ class Tag extends Model
     }
 
     /**
-     * The blogs that belong to the tag.
-     *
      * @return BelongsToMany<Tag, Blog>
      */
     public function blogs(): BelongsToMany
     {
-        return $this->belongsToMany(Blog::class, 'blog_tag');
+        return $this->belongsToMany(Blog::class);
+    }
+
+    /**
+     * @return BelongsToMany<Tag,Contribution>
+     */
+    public function contributions(): BelongsToMany
+    {
+        return $this->belongsToMany(Contribution::class);
     }
 
 }

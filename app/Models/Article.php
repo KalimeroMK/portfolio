@@ -2,17 +2,15 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Database\Factories\ArticleFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-/**
- * @template TFactory of Factory
- * @extends Model<TFactory>
- */
 class Article extends Model
 {
+    /** @use HasFactory<ArticleFactory> */
+
     use HasFactory;
 
     protected $table = 'articles';
@@ -28,7 +26,7 @@ class Article extends Model
     /**
      * The tags that belong to the article.
      *
-     * @return BelongsToMany<Tag, Article>
+     * @return BelongsToMany<Article, Tag>
      */
     public function tags(): BelongsToMany
     {

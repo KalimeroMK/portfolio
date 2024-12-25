@@ -2,14 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-/**
- * @template TFactory of Factory
- * @extends Model<TFactory>
- */
 class Contribution extends Model
 {
     protected $table = 'contributions';

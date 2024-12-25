@@ -2,19 +2,20 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Database\Factories\ExperienceFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-/**
- * @template TFactory of Factory
- * @extends Model<TFactory>
- */
+
 class Experience extends Model
 {
+    /** @use HasFactory<ExperienceFactory> */
+
     use HasFactory;
+
     protected $table = 'experiences';
+
     protected $fillable = [
         'company',
         'employment_type',
