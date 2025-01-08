@@ -20,6 +20,7 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
 use Joaopaulolndev\FilamentEditProfile\Pages\EditProfilePage;
+use Stephenjude\FilamentTwoFactorAuthentication\TwoFactorAuthenticationPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -62,7 +63,9 @@ class AdminPanelProvider extends PanelProvider
                     ->setTitle('Profile')
                     ->setNavigationLabel('Profile')
                     ->setNavigationGroup('User')
-                    ->setIcon('heroicon-o-user')
+                    ->setIcon('heroicon-o-user'),
+                TwoFactorAuthenticationPlugin::make()
+                    ->addTwoFactorMenuItem()
             ])
             ->userMenuItems([
                 'profile' => MenuItem::make()

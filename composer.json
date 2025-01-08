@@ -14,7 +14,8 @@
     "joaopaulolndev/filament-edit-profile": "^1.0",
     "laravel/framework": "^11.9",
     "laravel/tinker": "^2.9",
-    "spatie/laravel-honeypot": "^4.5"
+    "spatie/laravel-honeypot": "^4.5",
+    "stephenjude/filament-two-factor-authentication": "^0.0.10"
   },
   "require-dev": {
     "fakerphp/faker": "^1.23",
