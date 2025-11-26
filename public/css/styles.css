@@ -1495,6 +1495,7 @@ section#testimonials .card-wrapper .card > i {
     width: 90px;
     height: 90px;
     margin: 0 auto;
+    margin-bottom: 10px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
