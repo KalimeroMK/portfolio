@@ -81,6 +81,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
-@yield('scripts'
+@yield('scripts')
 </body>
 </html>
