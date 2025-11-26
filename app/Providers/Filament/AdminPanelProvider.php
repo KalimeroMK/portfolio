@@ -5,6 +5,8 @@ namespace App\Providers\Filament;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Auth\MultiFactor\App\AppAuthentication;
+use Filament\Auth\MultiFactor\Email\EmailAuthentication;
 use Filament\Navigation\MenuItem;
 use Filament\Pages;
 use Filament\Panel;
@@ -20,7 +22,6 @@ use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin;
 use Joaopaulolndev\FilamentEditProfile\Pages\EditProfilePage;
-use Stephenjude\FilamentTwoFactorAuthentication\TwoFactorAuthenticationPlugin;
 
 class AdminPanelProvider extends PanelProvider
 {
@@ -58,14 +59,19 @@ class AdminPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ])
+            ->multiFactorAuthentication(
+                providers: [
+                    AppAuthentication::make(),
+                    EmailAuthentication::make(),
+                ],
+                isRequired: false
+            )
             ->plugins([
                 FilamentEditProfilePlugin::make()
                     ->setTitle('Profile')
                     ->setNavigationLabel('Profile')
                     ->setNavigationGroup('User')
                     ->setIcon('heroicon-o-user'),
-                TwoFactorAuthenticationPlugin::make()
-                    ->addTwoFactorMenuItem()
             ])
             ->userMenuItems([
                 'profile' => MenuItem::make()

@@ -73,7 +73,7 @@
 </main>
 <!-- Footer -->
 @include('layout.footer')
-@yield('scripts')
+
 <!-- button -->
 <a href="#top_" id="myBtn" title="Go to top">
     <!-- SVG code -->
@@ -81,5 +81,6 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+@yield('scripts'
 </body>
 </html>

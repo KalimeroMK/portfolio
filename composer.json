@@ -9,13 +9,12 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "blendbyte/filament-title-with-slug": "^1.0",
-    "filament/filament": "^3.2",
-    "joaopaulolndev/filament-edit-profile": "^1.0",
-    "laravel/framework": "^11.9",
+    "blendbyte/filament-title-with-slug": "dev-fila4",
+    "filament/filament": "^4.0",
+    "joaopaulolndev/filament-edit-profile": "2.x-dev",
+    "laravel/framework": "^12.0",
     "laravel/tinker": "^2.9",
-    "spatie/laravel-honeypot": "^4.5",
-    "stephenjude/filament-two-factor-authentication": "^0.0.10"
+    "spatie/laravel-honeypot": "^4.5"
   },
   "require-dev": {
     "fakerphp/faker": "^1.23",
@@ -24,7 +23,7 @@
     "laravel/sail": "^1.26",
     "mockery/mockery": "^1.6",
     "nunomaduro/collision": "^8.0",
-    "phpunit/phpunit": "^11.0.1"
+    "phpunit/phpunit": "^11.0"
   },
   "autoload": {
     "psr-4": {
@@ -70,6 +69,6 @@
       "php-http/discovery": true
     }
   },
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
