@@ -374,34 +374,32 @@
                     <i class="fa fa-quote-left fa-fw custom-title-icon"></i>
                     What Clients Say
                 </h2>
-                <div class="row">
-                    <div class="col-md-12 section-content">
-                        @if($testimonials->count() > 0)
-                            <div class="row">
-                                @foreach($testimonials as $testimonial)
-                                    <div class="col-md-4 mb-4">
-                                        <div class="card p-4 h-100">
-                                            <div class="card-body">
-                                                <p class="card-text">
-                                                    <i class="fa fa-quote-left text-muted"></i> 
-                                                    {{ $testimonial->quote }} 
-                                                    <i class="fa fa-quote-right text-muted"></i>
-                                                </p>
-                                                <footer class="blockquote-footer mt-3">
-                                                    <strong>{{ $testimonial->name }}</strong>
-                                                    @if($testimonial->company)
-                                                        <br><small class="text-muted">{{ $testimonial->company }}</small>
-                                                    @endif
-                                                </footer>
-                                            </div>
-                                        </div>
+                <div class="row justify-content-md-center text-center bs d-flex flex-wrap">
+                    @if($testimonials->count() > 0)
+                        @foreach($testimonials as $testimonial)
+                            <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
+                                <div class="card p-4 bs h-100">
+                                    <div class="card-body">
+                                        <p class="card-text text-left">
+                                            <i class="fa fa-quote-left text-muted"></i> 
+                                            {{ $testimonial->quote }} 
+                                            <i class="fa fa-quote-right text-muted"></i>
+                                        </p>
+                                        <footer class="blockquote-footer mt-3 text-left">
+                                            <strong>{{ $testimonial->name }}</strong>
+                                            @if($testimonial->company)
+                                                <br><small class="text-muted">{{ $testimonial->company }}</small>
+                                            @endif
+                                        </footer>
                                     </div>
-                                @endforeach
+                                </div>
                             </div>
-                        @else
+                        @endforeach
+                    @else
+                        <div class="col-md-12 section-content">
                             <p class="text-muted">No testimonials available yet.</p>
-                        @endif
-                    </div>
+                        </div>
+                    @endif
                 </div>
             </section>
             <!--        ########### TESTIMONIALS SECTION END ##################-->
