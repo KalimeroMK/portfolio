@@ -4,18 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        {{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski | Senior Software Engineer | Laravel Expert' : 'Zoran Bogoevski | Senior Software Engineer | Laravel Expert' }}
+        {{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Architect & Team Lead' : 'Zoran Bogoevski - Senior Laravel Architect & Team Lead' }}
     </title>
 
-    <!-- Dynamic Meta Tags -->
-    <meta name="description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
-    <meta property="og:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
-    <meta property="og:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
-    <meta property="og:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
+    <!-- Meta Description -->
+    <meta name="description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and custom Payment Gateway integrations (Casys, Halkbank) for the Fintech industry.' }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="{{ !empty($article) ? 'article' : 'website' }}">
     <meta property="og:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
-    <meta name="og:type" content="article">
-    <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title : 'CV: Zoran Bogoevski | Senior Software Engineer | Laravel Developer' }}">
-    <meta name="twitter:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Zoran Bogoevski, a Senior Software Engineer and Laravel Developer with 10+ years of professional experience. Get in touch to discuss your next project.' }}">
+    <meta property="og:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Architect & Team Lead' : 'Zoran Bogoevski - Senior Laravel Architect & Team Lead' }}">
+    <meta property="og:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and custom Payment Gateway integrations (Casys, Halkbank) for the Fintech industry.' }}">
+    <meta property="og:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Zoran Bogoevski - Laravel Expert">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
+    <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Architect & Team Lead' : 'Zoran Bogoevski - Senior Laravel Architect & Team Lead' }}">
+    <meta name="twitter:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and custom Payment Gateway integrations (Casys, Halkbank) for the Fintech industry.' }}">
+    <meta name="twitter:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ !empty($article) ? route('article', $article->slug) : url()->current() }}">
@@ -41,21 +51,34 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/style-cf.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
         {!! json_encode([
             '@context' => 'https://schema.org',
             '@type' => 'Person',
             'name' => 'Zoran Bogoevski',
             'jobTitle' => 'Senior Software Engineer',
-            'worksFor' => [
-                '@type' => 'Organization',
-                'name' => 'Zoran Bogoevski'
-            ],
             'url' => 'https://zorandev.info',
             'image' => 'https://zbogoevski.github.io/images/social-share.png',
+            'description' => 'Senior Laravel Developer specializing in backend architecture and fintech integrations.',
             'sameAs' => [
+                'https://github.com/kalimeromk',
                 'https://www.linkedin.com/in/zoran-bogoevski/',
-                'https://github.com/zbogoevski'
+                'https://x.com/zaebalovek'
+            ],
+            'knowsAbout' => [
+                'Laravel',
+                'PHP',
+                'AWS',
+                'Software Architecture',
+                'Payment Gateways',
+                'Casys',
+                'Halkbank',
+                'SaaS',
+                'Fintech',
+                'Backend Development',
+                'API Development',
+                'System Architecture'
             ]
         ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
     </script>
