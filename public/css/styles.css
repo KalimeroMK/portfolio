@@ -1446,7 +1446,32 @@ section#certification .certificate-wrapper {
     text-align: center;
 }
 
-section#services .card-wrapper,
+section#services .card-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    padding: 0.5em;
+}
+
+section#services .card-wrapper .card {
+    background: #ededed;
+}
+
+section#services .card-wrapper .card > i {
+    color: #ffc107;
+    background-color: #081a35;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+
 section#testimonials .card-wrapper {
     display: flex;
     display: -webkit-flex;
@@ -1456,12 +1481,10 @@ section#testimonials .card-wrapper {
     padding: 0.5em;
 }
 
-section#services .card-wrapper .card,
 section#testimonials .card-wrapper .card {
     background: #ededed;
 }
 
-section#services .card-wrapper .card > i,
 section#testimonials .card-wrapper .card > i {
     color: #ffc107;
     background-color: #081a35;
