@@ -22,7 +22,7 @@ class HomeController extends Controller
         $contributions = Contribution::with('tags')->get();
 
         $user = User::first();
-        $customFields = $user ? json_decode($user->custom_fields ?? '{}', true) : [];
+        $customFields = $user ? ($user->custom_fields ?? []) : [];
 
         return view('index', compact('experiences', 'contributions', 'customFields'));
     }
