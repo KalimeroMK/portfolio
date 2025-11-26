@@ -1137,7 +1137,7 @@ section {
     padding: 6%;
 }
 
-section#about, section#experience, section#services, section#skills, section#contact, section#certification, section#personal-skills, section#testimonials {
+section#about, section#experience, section#services, section#skills, section#contact, section#certification, section#personal-skills, section#testimonials, section#fintech {
     transition: all 0.5s ease;
     position: relative;
     background-color: #fff !important;
@@ -1149,7 +1149,11 @@ section#about, section#experience, section#services, section#skills, section#con
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-section#about:hover, section#experience:hover, section#services:hover, section#skills:hover, section#contact:hover, section#certification:hover, section#personal-skills:hover, section#testimonials:hover {
+section#fintech.bg__javascript2 {
+    background-color: transparent !important;
+}
+
+section#about:hover, section#experience:hover, section#services:hover, section#skills:hover, section#contact:hover, section#certification:hover, section#personal-skills:hover, section#testimonials:hover, section#fintech:hover {
     box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
     transform: translateY(5px);
 }
@@ -1804,7 +1808,7 @@ section.red {
         padding: 6%;
     }
 
-    section#about, section#experience, section#services, section#skills, section#certification, section#contact, section#testimonials {
+    section#about, section#experience, section#services, section#skills, section#certification, section#contact, section#testimonials, section#fintech {
         background-color: #fff !important;
         margin-left: 15px;
         margin-right: 15px;
