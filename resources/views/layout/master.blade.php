@@ -42,22 +42,22 @@
     <link rel="stylesheet" href="{{ asset('css/style-cf.css') }}">
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Zoran Bogoevski",
-          "jobTitle": "Senior Software Engineer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Zoran Bogoevski"
-          },
-          "url": "https://zorandev.info",
-          "image": "https://zbogoevski.github.io/images/social-share.png",
-          "sameAs": [
-            "https://www.linkedin.com/in/zoran-bogoevski/",
-            "https://github.com/zbogoevski"
-          ]
-        }
+        {!! json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'Person',
+            'name' => 'Zoran Bogoevski',
+            'jobTitle' => 'Senior Software Engineer',
+            'worksFor' => [
+                '@type' => 'Organization',
+                'name' => 'Zoran Bogoevski'
+            ],
+            'url' => 'https://zorandev.info',
+            'image' => 'https://zbogoevski.github.io/images/social-share.png',
+            'sameAs' => [
+                'https://www.linkedin.com/in/zoran-bogoevski/',
+                'https://github.com/zbogoevski'
+            ]
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
     </script>
 </head>
 
