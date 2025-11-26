@@ -375,30 +375,24 @@
                     What Clients Say
                 </h2>
                 <div class="row justify-content-md-center text-center bs d-flex flex-wrap">
-                    @if($testimonials->count() > 0)
-                        @foreach($testimonials as $testimonial)
-                            <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
-                                <div class="card p-4 bs">
-                                    <i class="mt-3 fa fa-quote-left fa-3x bs"></i>
+                    @foreach($testimonials as $testimonial)
+                        <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
+                            <div class="card p-4 bs">
+                                <i class="mt-3 fa fa-quote-left fa-3x bs"></i>
+                                <p class="text-muted bs">
+                                    {{ $testimonial->quote }}
+                                </p>
+                                <h5 class="mt-4">
+                                    {{ $testimonial->name }}
+                                </h5>
+                                @if($testimonial->company)
                                     <p class="text-muted bs">
-                                        {{ $testimonial->quote }}
+                                        {{ $testimonial->company }}
                                     </p>
-                                    <h5 class="mt-4">
-                                        {{ $testimonial->name }}
-                                    </h5>
-                                    @if($testimonial->company)
-                                        <p class="text-muted bs">
-                                            {{ $testimonial->company }}
-                                        </p>
-                                    @endif
-                                </div>
+                                @endif
                             </div>
-                        @endforeach
-                    @else
-                        <div class="col-md-12 section-content">
-                            <p class="text-muted">No testimonials available yet.</p>
                         </div>
-                    @endif
+                    @endforeach
                 </div>
             </section>
             <!--        ########### TESTIMONIALS SECTION END ##################-->
