@@ -380,11 +380,11 @@
                             <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
                                 <div class="card p-4 bs">
                                     <i class="mt-3 fa fa-quote-left fa-3x bs"></i>
-                                    <p class="text-muted bs mt-4">
+                                    <p class="text-muted bs">
                                         {{ $testimonial->quote }}
                                     </p>
                                     <h5 class="mt-4">
-                                        <strong>{{ $testimonial->name }}</strong>
+                                        {{ $testimonial->name }}
                                     </h5>
                                     @if($testimonial->company)
                                         <p class="text-muted bs">
