@@ -7,8 +7,8 @@
             <div class="main-info">
                 <a href="{{ route('home')}}"> <img alt="Zoran Bogoevski" class="rounded-circle mb-3 img-black-white"
                                                    src="{{asset('images/me.jpeg') }}" width="160px"></a>
-                <h1 class="heading text-white">Hi, i&#39;m <span>Zoran Bogoevski</span></h1>
-                <p class="sub-heading text-white"><span class="">Senior Software Engineer</span> | Laravel Developer</p>
+                <h1 class="heading text-white" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Hi, I&#39;m <span>Zoran Bogoevski</span></h1>
+                <p class="sub-heading text-white" style="font-size: 1.5rem; font-weight: 600;"><span class="">Senior Software Engineer</span> | Laravel Expert</p>
                 <div class="social my-4">
                     <!-- Github -->
                     <a data-placement="bottom" data-toggle="tooltip" href="https://github.com/kalimeromk" rel="noreferrer" target="_blank" title="Find me on Github">
@@ -56,8 +56,9 @@
                     </a>
                 </div>
                 <div class="d-flex justify-content-center justify-content-sm-start my-4">
-                    <a class="btn btn-dark btn-lg" href="{{ route('articles') }}" style="margin-right: 2%">Article</a>
-                    <a class="btn btn-dark btn-lg" href="#contact">Contact</a>
+                    <a class="btn btn-dark btn-lg" href="{{ route('articles') }}" style="margin-right: 2%">Articles</a>
+                    <a class="btn btn-primary btn-lg" href="#contact" style="margin-right: 2%">Hire Me</a>
+                    <a class="btn btn-outline-light btn-lg" href="mailto:zbogoevski@gmail.com">Book Consultation</a>
                 </div>
             </div>
         </section>
@@ -142,9 +143,7 @@
                 <div class="row">
                     <div class="col-md-12 section-content">
                         <p>
-                            Using community code for use developers is normal,
-                            but in same way normal and moral to give some back to the community as well,
-                            here are some of my open source projects:
+                            Contributing to open source is not just about code—it's about building solutions that help developers solve real-world problems. Here are some of my open source contributions:
                         </p>
                         @foreach($contributions as $contribution)
                             <div class="timeline-content right bs">
@@ -178,23 +177,24 @@
             </section>
             <!--        ########### CERTIFICATES SECTION END ##################-->
 
-            <!--        ########### CERTIFICATES SECTION START ##################-->
-            <section class="bg__javascript2" id="certification">
+            <!--        ########### MACEDONIAN FINTECH SOLUTIONS SECTION START ##################-->
+            <section class="bg__javascript2" id="fintech">
                 <h2 class="heading">
-                    <i class="fa fa-certificate fa-fw custom-title-icon"></i>
-                    Laravel Developer
+                    <i class="fa fa-credit-card fa-fw custom-title-icon"></i>
+                    Macedonian Fintech Solutions
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content">
                         <p>
-                            My preferred tool for building custom web applications. Laravel is the most popular PHP
-                            framework at the moment. It has a huge ecosystem and therefore a lot of 3rd party packages,
-                            speeding up the development process.
+                            As an active member of the Macedonian developer community, I've created specialized Laravel packages for local payment gateways, making fintech integrations seamless for businesses across the region. These solutions are specifically designed for the Macedonian market and are trusted by local companies.
                         </p>
+                        <div class="alert alert-info mt-3">
+                            <strong>Why choose these packages?</strong> They reduce integration time from weeks to hours, are fully tested, and maintained with the latest Laravel standards. Perfect for any Macedonian company building e-commerce or payment solutions.
+                        </div>
                     </div>
                 </div>
             </section>
-            <!--        ########### CERTIFICATES SECTION END ##################-->
+            <!--        ########### MACEDONIAN FINTECH SOLUTIONS SECTION END ##################-->
 
         </div>
 
@@ -367,6 +367,51 @@
         </div>
 
         <div class="main-content">
+            <!--        ########### TESTIMONIALS SECTION START ##################-->
+            <section class="bg__javascript2" id="testimonials">
+                <h2 class="heading">
+                    <i class="fa fa-quote-left fa-fw custom-title-icon"></i>
+                    What Clients Say
+                </h2>
+                <div class="row">
+                    <div class="col-md-12 section-content">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card p-4 h-100">
+                                    <div class="card-body">
+                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> Zoran delivered a complex payment integration that saved us weeks of development time. His expertise with Laravel and local payment gateways is unmatched. <i class="fa fa-quote-right text-muted"></i></p>
+                                        <footer class="blockquote-footer mt-3">
+                                            <strong>Local E-commerce Company</strong>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card p-4 h-100">
+                                    <div class="card-body">
+                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> Working with Zoran was a game-changer. He doesn't just write code—he builds scalable architectures that grow with your business. <i class="fa fa-quote-right text-muted"></i></p>
+                                        <footer class="blockquote-footer mt-3">
+                                            <strong>Tech Startup Founder</strong>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card p-4 h-100">
+                                    <div class="card-body">
+                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> His open source packages for Macedonian payment gateways are a lifesaver. Clean, well-documented, and production-ready from day one. <i class="fa fa-quote-right text-muted"></i></p>
+                                        <footer class="blockquote-footer mt-3">
+                                            <strong>Fellow Developer</strong>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        ########### TESTIMONIALS SECTION END ##################-->
+            
             <!--        ########### SERVICES SECTION START ##################-->
             <section class="blue" id="services">
                 <h2 class="heading">
@@ -391,9 +436,9 @@
                     <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
                         <div class="card p-4 bs">
                             <i class="mt-3 fa fa-code fa-3x bs"></i>
-                            <h5 class="mt-4">Package development</h5>
+                            <h5 class="mt-4">Package Development</h5>
                             <p class="text-muted bs">
-                                I will build custom laravel package to suite your needs .
+                                I will build custom Laravel packages to suit your needs, including specialized solutions for Macedonian payment gateways (Casys, Halkbank) and other local integrations.
                             </p>
                         </div>
                     </div>
