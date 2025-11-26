@@ -179,7 +179,7 @@
             <!--        ########### CERTIFICATES SECTION END ##################-->
 
             <!--        ########### MACEDONIAN FINTECH SOLUTIONS SECTION START ##################-->
-            <section class="bg__javascript2" id="fintech">
+            <section class="blue" id="fintech">
                 <h2 class="heading">
                     <i class="fa fa-credit-card fa-fw custom-title-icon"></i>
                     Macedonian Fintech Solutions

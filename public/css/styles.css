@@ -1149,9 +1149,6 @@ section#about, section#experience, section#services, section#skills, section#con
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-section#fintech.bg__javascript2 {
-    background-color: transparent !important;
-}
 
 section#about:hover, section#experience:hover, section#services:hover, section#skills:hover, section#contact:hover, section#certification:hover, section#personal-skills:hover, section#testimonials:hover, section#fintech:hover {
     box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
