@@ -57,6 +57,14 @@ class HomeController extends Controller
         return view('article', compact('article'));
     }
 
+    public function testimonials(): View
+    {
+        $testimonials = Testimonial::where('is_active', true)
+            ->orderBy('order')
+            ->get();
+        return view('testimonials', compact('testimonials'));
+    }
+
     public function sitemap(): Response
     {
         $articles = Article::latest()->get();

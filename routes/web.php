@@ -7,4 +7,5 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::post('send-contact', [HomeController::class, 'send'])->name('contact');
 Route::get('articles', [HomeController::class, 'articles'])->name('articles');
 Route::get('articles/{slug}', [HomeController::class, 'article'])->name('article');
+Route::get('testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
 Route::get('sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');

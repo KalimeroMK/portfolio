@@ -66,26 +66,46 @@
         </section>
 
         <div class="main-content">
-            <!--        ########### ABOUT ME SECTION START ##################-->
-            @foreach($articles as $article)
-            <section class="bg__javascript2" id="about">
-                <h3 class="heading">
-                    <a href="{{ route('article', $article->slug) }}">
-                        <i class="fa fa-address-card fa-fw custom-title-icon"></i>
-                        {{ $article->title }}</a>
-                </h3>
+            <!--        ########### TESTIMONIALS SECTION START ##################-->
+            <section class="bg__javascript2" id="testimonials">
+                <h2 class="heading">
+                    <i class="fa fa-quote-left fa-fw custom-title-icon"></i>
+                    What Clients Say
+                </h2>
                 <div class="row">
-                    <div class="col-4">
-                        <img src="{{ asset('storage/' . $article->image) }}" alt="{{ $article->title }}" class="img-fluid">
-                    </div>
-                    <div class="col-8 section-content text-justify">
-                        {{ Str::limit(strip_tags($article->description), 500) }}
+                    <div class="col-md-12 section-content">
+                        @if($testimonials->count() > 0)
+                            <div class="row">
+                                @foreach($testimonials as $testimonial)
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card p-4 h-100">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <i class="fa fa-quote-left text-muted"></i> 
+                                                    {{ $testimonial->quote }} 
+                                                    <i class="fa fa-quote-right text-muted"></i>
+                                                </p>
+                                                <footer class="blockquote-footer mt-3">
+                                                    <strong>{{ $testimonial->name }}</strong>
+                                                    @if($testimonial->company)
+                                                        <br><small class="text-muted">{{ $testimonial->company }}</small>
+                                                    @endif
+                                                </footer>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @else
+                            <p class="text-muted">No testimonials available yet.</p>
+                        @endif
                     </div>
                 </div>
             </section>
-            @endforeach
+            <!--        ########### TESTIMONIALS SECTION END ##################-->
         </div>
 
 
     </div>
 @endsection
+
