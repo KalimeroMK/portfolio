@@ -375,38 +375,31 @@
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content">
-                        <div class="row">
-                            <div class="col-md-4 mb-4">
-                                <div class="card p-4 h-100">
-                                    <div class="card-body">
-                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> Zoran delivered a complex payment integration that saved us weeks of development time. His expertise with Laravel and local payment gateways is unmatched. <i class="fa fa-quote-right text-muted"></i></p>
-                                        <footer class="blockquote-footer mt-3">
-                                            <strong>Local E-commerce Company</strong>
-                                        </footer>
+                        @if($testimonials->count() > 0)
+                            <div class="row">
+                                @foreach($testimonials as $testimonial)
+                                    <div class="col-md-4 mb-4">
+                                        <div class="card p-4 h-100">
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <i class="fa fa-quote-left text-muted"></i> 
+                                                    {{ $testimonial->quote }} 
+                                                    <i class="fa fa-quote-right text-muted"></i>
+                                                </p>
+                                                <footer class="blockquote-footer mt-3">
+                                                    <strong>{{ $testimonial->name }}</strong>
+                                                    @if($testimonial->company)
+                                                        <br><small class="text-muted">{{ $testimonial->company }}</small>
+                                                    @endif
+                                                </footer>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
+                                @endforeach
                             </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card p-4 h-100">
-                                    <div class="card-body">
-                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> Working with Zoran was a game-changer. He doesn't just write code—he builds scalable architectures that grow with your business. <i class="fa fa-quote-right text-muted"></i></p>
-                                        <footer class="blockquote-footer mt-3">
-                                            <strong>Tech Startup Founder</strong>
-                                        </footer>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card p-4 h-100">
-                                    <div class="card-body">
-                                        <p class="card-text"><i class="fa fa-quote-left text-muted"></i> His open source packages for Macedonian payment gateways are a lifesaver. Clean, well-documented, and production-ready from day one. <i class="fa fa-quote-right text-muted"></i></p>
-                                        <footer class="blockquote-footer mt-3">
-                                            <strong>Fellow Developer</strong>
-                                        </footer>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @else
+                            <p class="text-muted">No testimonials available yet.</p>
+                        @endif
                     </div>
                 </div>
             </section>

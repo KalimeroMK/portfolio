@@ -1,0 +1,1932 @@
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+Warning: require(/var/www/vendor/autoload.php): Failed to open stream: No such file or directory in /var/www/artisan on line 9
+
+Fatal error: Uncaught Error: Failed opening required '/var/www/vendor/autoload.php' (include_path='.:/usr/local/lib/php') in /var/www/artisan:9
+Stack trace:
+#0 {main}
+  thrown in /var/www/artisan on line 9
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  Database file at path [/var/www/database/database.sqlite] does not exist. Ensure this is an absolute path to the database. (Connection: sqlite, SQL: select * from "cache" where "key" = laravel_cache_illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+34 vendor frames [22m
+
+  35  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+40 vendor frames [22m
+
+  41  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'homestead.cache' doesn't exist (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'homestead.cache' doesn't exist (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[42S02]: Base table or view not found: 1146 Table 'homestead.cache' doesn't exist (Connection: mysql, SQL: select * from `cache` where `key` = illuminate:queue:restart limit 1)
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:813
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+    809▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    810▕                 );
+    811▕             }
+    812▕ 
+  ➜ 813▕             throw new QueryException(
+    814▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    815▕             );
+    816▕         }
+    817▕     }
+
+      [2m+29 vendor frames [22m
+
+  30  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+  2024-06-26 05:10:01 App\Mail\ResponseMail  2024-06-26 05:10:01 App\Mail\ResponseMail .......................... RUNNING
+ .......................... RUNNING
+  2024-06-26 05:10:01 App\Mail\ResponseMail ..................... 41.89ms FAIL
+  2024-06-26 05:10:01 App\Mail\ResponseMail .......................... RUNNING
+  2024-06-26 05:10:04 App\Mail\ResponseMail .......................... 2s DONE
+  2024-06-26 05:10:04 App\Mail\ResponseMail .......................... 2s DONE
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Error 
+
+  Class "Joaopaulolndev\FilamentEditProfile\FilamentEditProfilePlugin" not found
+
+  at app/Providers/Filament/AdminPanelProvider.php:61
+     57▕             ->authMiddleware([
+     58▕                 Authenticate::class,
+     59▕             ])
+     60▕             ->plugins([
+  ➜  61▕                 FilamentEditProfilePlugin::make()
+     62▕                     ->setTitle('Profile')
+     63▕                     ->setNavigationLabel('Profile')
+     64▕                     ->setNavigationGroup('User')
+     65▕                     ->setIcon('heroicon-o-user')
+
+      [2m+35 vendor frames [22m
+
+  36  [internal]:0
+      Illuminate\Foundation\Application::Illuminate\Foundation\{closure}(Object(Filament\FilamentServiceProvider), "Filament\FilamentServiceProvider")
+      [2m+6 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+
+
+   Illuminate\Database\QueryException 
+
+  SQLSTATE[HY000] [2002] Connection refused (Connection: mysql, SQL: select * from `cache` where `key` in (illuminate:queue:restart))
+
+  at vendor/laravel/framework/src/Illuminate/Database/Connection.php:825
+    821▕                     $this->getName(), $query, $this->prepareBindings($bindings), $e
+    822▕                 );
+    823▕             }
+    824▕ 
+  ➜ 825▕             throw new QueryException(
+    826▕                 $this->getName(), $query, $this->prepareBindings($bindings), $e
+    827▕             );
+    828▕         }
+    829▕     }
+
+      [2m+42 vendor frames [22m
+
+  43  artisan:13
+      Illuminate\Foundation\Application::handleCommand(Object(Symfony\Component\Console\Input\ArgvInput))
+

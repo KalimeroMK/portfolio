@@ -8,6 +8,7 @@ use App\Mail\ResponseMail;
 use App\Models\Article;
 use App\Models\Contribution;
 use App\Models\Experience;
+use App\Models\Testimonial;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
@@ -20,11 +21,14 @@ class HomeController extends Controller
     {
         $experiences = Experience::with('tags')->get();
         $contributions = Contribution::with('tags')->get();
+        $testimonials = Testimonial::where('is_active', true)
+            ->orderBy('order')
+            ->get();
 
         $user = User::first();
         $customFields = $user ? ($user->custom_fields ?? []) : [];
 
-        return view('index', compact('experiences', 'contributions', 'customFields'));
+        return view('index', compact('experiences', 'contributions', 'testimonials', 'customFields'));
     }
 
     public function send(CreateRequest $request): RedirectResponse
