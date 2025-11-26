@@ -1150,6 +1150,23 @@ section#about, section#experience, section#services, section#skills, section#con
 }
 
 
+section#fintech.blue {
+    background-color: #081a35 !important;
+    color: #fff !important;
+}
+
+section#fintech.blue .heading {
+    color: #fff !important;
+}
+
+section#fintech.blue .section-content {
+    color: #fff !important;
+}
+
+section#fintech.blue p {
+    color: #fff !important;
+}
+
 section#about:hover, section#experience:hover, section#services:hover, section#skills:hover, section#contact:hover, section#certification:hover, section#personal-skills:hover, section#testimonials:hover, section#fintech:hover {
     box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.4);
     transform: translateY(5px);
