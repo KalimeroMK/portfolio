@@ -243,6 +243,15 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">YII 2</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">RESTful API / 3rd party API Integrations</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
