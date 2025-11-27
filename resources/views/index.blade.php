@@ -376,7 +376,7 @@
                 </h2>
                 <div class="row justify-content-md-center text-center bs d-flex flex-wrap">
                     @foreach($testimonials as $testimonial)
-                        <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
+                        <div class="card-wrapper col-12 mb-3 bs d-flex">
                             <div class="card p-4 bs">
                                 <i class="mt-3 fa fa-quote-left fa-3x bs"></i>
                                 <p class="text-muted bs">
