@@ -2210,3 +2210,24 @@ html {
 .social > a {
     text-decoration: none !important;
 }
+
+/* Inline styles moved from views */
+.sidebar .heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sidebar .sub-heading {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-buttons-wrapper {
+    gap: 0.5rem;
+}
+
+.skills-wrapper {
+    z-index: 4;
+    position: relative;
+}

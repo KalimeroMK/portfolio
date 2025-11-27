@@ -7,8 +7,8 @@
             <div class="main-info">
                 <a href="{{ route('home')}}"> <img alt="Zoran Bogoevski" class="rounded-circle mb-3 img-black-white"
                                                    src="{{asset('images/me.jpeg') }}" width="160px"></a>
-                <h1 class="heading text-white" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Hi, I&#39;m <span>Zoran Bogoevski</span></h1>
-                <p class="sub-heading text-white" style="font-size: 1.5rem; font-weight: 600;"><span class="">Senior Software Engineer</span> | Laravel Expert</p>
+                <h1 class="heading text-white">Hi, I&#39;m <span>Zoran Bogoevski</span></h1>
+                <p class="sub-heading text-white"><span class="">Senior Software Engineer</span> | Laravel Expert</p>
                 <div class="social my-4">
                     <!-- Github -->
                     <a data-placement="bottom" data-toggle="tooltip" href="https://github.com/kalimeromk" rel="noreferrer" target="_blank" title="Find me on Github">
@@ -55,7 +55,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="d-flex justify-content-center justify-content-sm-start my-4 flex-wrap" style="gap: 0.5rem;">
+                <div class="d-flex justify-content-center justify-content-sm-start my-4 flex-wrap nav-buttons-wrapper">
                     <a class="btn btn-outline-light btn-lg" href="{{ route('articles') }}">Articles</a>
                     <a class="btn btn-outline-light btn-lg" href="{{ route('testimonials') }}">Testimonials</a>
                     <a class="btn btn-outline-light btn-lg" href="#contact">Hire Me</a>
@@ -200,7 +200,7 @@
         </div>
 
 
-        <div class="bs" style="z-index: 4; position: relative;">
+        <div class="bs skills-wrapper">
             <!--        ########### SKILLS SECTION START ##################-->
             <section class="aqua text-light" id="skills">
                 <h2 class="heading">
