@@ -210,6 +210,7 @@
 
                 <div class="row">
                     <div class="col-md-6 section-content">
+                        <!-- 1. Основни Јазици и Бази на Податоци (Јадрото) -->
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">PHP / OOP PHP</span>
@@ -222,6 +223,17 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">SQL / MySQL / MariaDB</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2. Фрејмворци и Клучни Функционалности (Продуктивност) -->
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">Laravel Framework</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
@@ -229,6 +241,35 @@
                                      role="progressbar" style="width: 85%"></div>
                             </div>
                         </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">YII 2</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">RESTful API / 3rd party API Integrations</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">Stripe / PayPal</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- 3. Принципи и Методологии (Квалитет на Кодот) -->
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">SOLID Principles</span></span>
@@ -256,41 +297,15 @@
                                      role="progressbar" style="width: 75%"></div>
                             </div>
                         </div>
+                        
+                        <!-- 4. Алатки за Тестирање и Околина (DevOps) -->
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">YII 2</span></span>
+                    <span class="font-weight-bold">PHPUnit / Jest</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
                                      role="progressbar" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">SQL / MySQL / MariaDB</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span
-                            class="font-weight-bold">RESTful API / Stripe / PayPal / 3rd party API Integrations</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold"> Ajax / JSON</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="skill">
@@ -304,19 +319,20 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">PHPUnit / Jest </span></span>
+                    <span class="font-weight-bold">CI / Jenkins</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 60%"></div>
+                                     role="progressbar" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6 section-content">
+                        <!-- Frontend Вештини -->
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">HTML5 / Bootstrap </span></span>
+                    <span class="font-weight-bold">HTML5 / Bootstrap</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
@@ -325,7 +341,7 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">CSS / CSS3 </span></span>
+                    <span class="font-weight-bold">CSS / CSS3</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
@@ -352,7 +368,7 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">CI / Jenkins</span></span>
+                    <span class="font-weight-bold">Ajax / JSON</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
