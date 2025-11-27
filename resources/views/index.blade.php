@@ -151,7 +151,7 @@
                                 <div class="company-info d-flex align-items-center py-2 bs">
                                     <a href="{{ $contribution->url }}">
                                 <span class="company-logo pr-3 bs">
-                        <img alt="{{ $contribution->title }}logo" class="img-responsive rounded-circle bs"
+                        <img alt="{{ $contribution->title }} logo" class="img-responsive rounded-circle bs"
                              src="{{ asset('storage/' . $contribution->image) }}"
                              width="65px">
                             </span>

@@ -9,6 +9,12 @@
 
     <!-- Meta Description -->
     <meta name="description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and custom Payment Gateway integrations (Casys, Halkbank) for the Fintech industry.' }}">
+    
+    <!-- Author -->
+    <meta name="author" content="Zoran Bogoevski">
+    
+    <!-- Keywords -->
+    <meta name="keywords" content="Laravel, PHP, AWS, Software Architecture, Payment Gateways, Casys, Halkbank, SaaS, Fintech, Backend Development, API Development, System Architecture, Senior Software Engineer, Laravel Expert, Macedonian Developer">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{{ !empty($article) ? 'article' : 'website' }}">
@@ -29,6 +35,13 @@
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ !empty($article) ? route('article', $article->slug) : url()->current() }}">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en-US">
+    
+    <!-- Geo Tags (Optional - for Macedonian market) -->
+    <meta name="geo.region" content="MK">
+    <meta name="geo.placename" content="North Macedonia">
 
     <!-- Favicon for Various Platforms -->
     <!-- Standard Favicon -->
