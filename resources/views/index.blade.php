@@ -243,15 +243,6 @@
                         </div>
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">YII 2</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">RESTful API / 3rd party API Integrations</span></span>
                             <div class="progress">
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
@@ -295,35 +286,6 @@
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
                                      role="progressbar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        
-                        <!-- 4. Алатки за Тестирање и Околина (DevOps) -->
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">PHPUnit / Jest</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">Docker / Vagrant / VM</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">CI / Jenkins</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
@@ -373,6 +335,44 @@
                                 <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
                                      class="progress-bar bg-blue"
                                      role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Алатки за Тестирање и Околина (DevOps) -->
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">PHPUnit / Jest</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">Docker / Vagrant / VM</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">CI / Jenkins</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">YII 2</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 60%"></div>
                             </div>
                         </div>
                     </div>
