@@ -212,83 +212,6 @@
                     <div class="col-md-6 section-content">
                         <div class="skill">
                 <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">HTML5 / Bootstrap </span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">CSS / CSS3 </span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">JavaScript / jQuery</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">Twig / Blade</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">CI / Jenkins</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold"> Ajax / JSON</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">Docker / Vagrant / VM</span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
-                    <span class="font-weight-bold">PHPUnit / Jest </span></span>
-                            <div class="progress">
-                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
-                                     class="progress-bar bg-blue"
-                                     role="progressbar" style="width: 60%"></div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 section-content">
-                        <div class="skill">
-                <span class="h6 d-flex justify-content-between align-items-center">
                     <span class="font-weight-bold">PHP / OOP PHP</span>
                 </span>
                             <div class="progress">
@@ -361,6 +284,83 @@
                                      role="progressbar" style="width: 85%"></div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-md-6 section-content">
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">HTML5 / Bootstrap </span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">CSS / CSS3 </span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">JavaScript / jQuery</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">Twig / Blade</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">CI / Jenkins</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold"> Ajax / JSON</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">Docker / Vagrant / VM</span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill">
+                <span class="h6 d-flex justify-content-between align-items-center">
+                    <span class="font-weight-bold">PHPUnit / Jest </span></span>
+                            <div class="progress">
+                                <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10"
+                                     class="progress-bar bg-blue"
+                                     role="progressbar" style="width: 60%"></div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
