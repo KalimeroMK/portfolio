@@ -39,6 +39,7 @@ class ArticleResource extends Resource
                     fieldSlug: 'slug',
                 ),
                 FileUpload::make('image')
+                    ->image()
                     ->disk('public')
                     ->directory('images/articles')
                     ->required(),

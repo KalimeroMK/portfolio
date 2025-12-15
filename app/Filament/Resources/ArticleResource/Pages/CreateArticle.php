@@ -25,6 +25,11 @@ class CreateArticle extends CreateRecord
             $data['publish'] = false;
         }
 
+        // Convert image array to string if needed
+        if (isset($data['image']) && is_array($data['image']) && !empty($data['image'])) {
+            $data['image'] = $data['image'][0] ?? null;
+        }
+
         return $data;
     }
 }
