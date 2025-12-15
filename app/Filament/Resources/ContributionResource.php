@@ -4,7 +4,6 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ContributionResource\Pages;
 use App\Models\Contribution;
-use App\Models\Tag;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
@@ -41,10 +40,10 @@ class ContributionResource extends Resource
                 RichEditor::make('description')
                     ->required()->columnSpanFull()
                     ->nullable(),
-                Select::make('tag_id')
+                Select::make('tags')
                     ->multiple()
-                    ->relationship('tags')
-                    ->options(Tag::pluck('name', 'id'))
+                    ->relationship('tags', 'name')
+                    ->preload()
             ]);
     }
 

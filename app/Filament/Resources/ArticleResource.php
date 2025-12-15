@@ -4,7 +4,6 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ArticleResource\Pages;
 use App\Models\Article;
-use App\Models\Tag;
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\FileUpload;
@@ -44,10 +43,10 @@ class ArticleResource extends Resource
                 RichEditor::make('description')
                     ->required()
                     ->columnSpanFull(),
-                Select::make('tag_id')
+                Select::make('tags')
                     ->multiple()
-                    ->relationship('tags')
-                    ->options(Tag::pluck('name', 'id')),
+                    ->relationship('tags', 'name')
+                    ->preload(),
                 Checkbox::make('publish'),
             ]);
     }
