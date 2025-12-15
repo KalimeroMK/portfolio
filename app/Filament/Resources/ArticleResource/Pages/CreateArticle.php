@@ -26,8 +26,15 @@ class CreateArticle extends CreateRecord
         }
 
         // Convert image array to string if needed
-        if (isset($data['image']) && is_array($data['image']) && !empty($data['image'])) {
-            $data['image'] = $data['image'][0] ?? null;
+        // FileUpload in Filament returns array even for single file
+        if (isset($data['image']) && is_array($data['image'])) {
+            // Get the first element if array is not empty
+            if (!empty($data['image'])) {
+                $data['image'] = $data['image'][0];
+            } else {
+                // Empty array means no file uploaded, set to null for validation
+                $data['image'] = null;
+            }
         }
 
         return $data;
