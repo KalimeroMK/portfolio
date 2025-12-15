@@ -24,6 +24,18 @@ class Article extends Model
     ];
 
     /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [
+            'publish' => 'boolean',
+        ];
+    }
+
+    /**
      * The tags that belong to the article.
      *
      * @return BelongsToMany<Article, Tag>

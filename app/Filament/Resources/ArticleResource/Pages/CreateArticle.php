@@ -15,4 +15,16 @@ class CreateArticle extends CreateRecord
 
         ];
     }
+
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        // Ensure publish is boolean
+        if (isset($data['publish'])) {
+            $data['publish'] = (bool) $data['publish'];
+        } else {
+            $data['publish'] = false;
+        }
+
+        return $data;
+    }
 }

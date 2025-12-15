@@ -39,6 +39,8 @@ class ArticleResource extends Resource
                     fieldSlug: 'slug',
                 ),
                 FileUpload::make('image')
+                    ->disk('public')
+                    ->directory('images/articles')
                     ->required(),
                 RichEditor::make('description')
                     ->required()
@@ -47,7 +49,8 @@ class ArticleResource extends Resource
                     ->multiple()
                     ->relationship('tags', 'name')
                     ->preload(),
-                Checkbox::make('publish'),
+                Checkbox::make('publish')
+                    ->default(false),
             ]);
     }
 
