@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        {{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' : 'Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' }}
+        {{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski | Senior Laravel Developer & PHP API' : 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}
     </title>
 
     <!-- Meta Description -->
@@ -19,7 +19,7 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="{{ !empty($article) ? 'article' : 'website' }}">
     <meta property="og:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
-    <meta property="og:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' : 'Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' }}">
+    <meta property="og:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski | Senior Laravel Developer & PHP API' : 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
     <meta property="og:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
     <meta property="og:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
     <meta property="og:image:width" content="1200">
@@ -29,7 +29,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
-    <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' : 'Zoran Bogoevski - Senior Laravel Developer | PHP & API Architect' }}">
+    <meta name="twitter:title" content="{{ !empty($article->title) ? $article->title . ' | Zoran Bogoevski | Senior Laravel Developer & PHP API' : 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
     <meta name="twitter:description" content="{{ !empty($article->description) ? Str::limit(strip_tags($article->description), 150) : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
     <meta name="twitter:image" content="{{ !empty($article->image) ? asset('storage/' . $article->image) : 'https://zbogoevski.github.io/images/social-share.png' }}">
 
