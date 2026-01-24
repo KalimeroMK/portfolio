@@ -19,7 +19,7 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        $experiences = Experience::with('tags')->get();
+        $experiences = Experience::with('tags')->orderBy('id', 'desc')->get();
         $contributions = Contribution::with('tags')->get();
         $testimonials = Testimonial::where('is_active', true)
             ->orderBy('order')
