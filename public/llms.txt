@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Title: Zoran Bogoevski Portfolio
+Description: Senior Laravel Developer portfolio and blog, focused on SaaS architecture, AWS, and fintech payment gateway integrations.
+Contact: mailto:hello@zoranbogoevski.com

@@ -6,9 +6,10 @@
         <section class="sidebar d-flex align-items-center text-sm-left text-center p-3 pt-4 pb-4 p-sm-5">
             <div class="main-info">
                 <a href="{{ route('home')}}"> <img alt="Zoran Bogoevski" class="rounded-circle mb-3 img-black-white"
-                                                   src="{{asset('images/me.jpeg') }}" width="160px"></a>
-                <h1 class="heading text-white">Hi, I&#39;m <span>Zoran Bogoevski</span></h1>
-                <p class="sub-heading text-white"><span class="">Senior Software Engineer</span> | Laravel Expert</p>
+                                                   src="{{asset('images/me.jpeg') }}" width="160" height="160"
+                                                   loading="eager" decoding="async" fetchpriority="high"></a>
+                <h1 class="heading text-white">Hi, I&#39;m <span>Zoran Bogoevski</span> — Senior Laravel Developer</h1>
+                <p class="sub-heading text-white"><span class="">PHP & Laravel Architect</span> | SaaS & API Integrations</p>
                 <div class="social my-4">
                     <!-- Github -->
                     <a data-placement="bottom" data-toggle="tooltip" href="https://github.com/kalimeromk" rel="noreferrer" target="_blank" title="Find me on Github">
@@ -69,7 +70,7 @@
             <section class="bg__javascript2" id="about">
                 <h2 class="heading">
                     <i class="fa fa-address-card fa-fw custom-title-icon"></i>
-                    About me
+                    About me — Laravel & PHP Developer
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content text-justify">
@@ -85,7 +86,7 @@
             <section class="bg__javascript2" id="experience">
                 <h2 class="heading">
                     <i class="fa fa-briefcase fa-fw custom-title-icon"></i>
-                    Experience
+                    Laravel & PHP Experience
                 </h2>
                 <div id="timeline">
                     @foreach($experiences as $experience)
@@ -101,7 +102,7 @@
                     <span class="company-logo">
                         <img alt="{{ $experience->company }} logo"
                              class="img-responsive rounded-circle" src="{{ asset('storage/' . $experience->image) }}"
-                             width="65px"/>
+                             width="65" height="65" loading="lazy" decoding="async"/>
                     </span>
                                     <span class="company-title-position">
                         <h6 class="h5 mt-2 mb-0">
@@ -153,7 +154,7 @@
                                 <span class="company-logo pr-3 bs">
                         <img alt="{{ $contribution->title }} logo" class="img-responsive rounded-circle bs"
                              src="{{ asset('storage/' . $contribution->image) }}"
-                             width="65px">
+                             width="65" height="65" loading="lazy" decoding="async">
                             </span>
                                     </a>
                                     <span class="company-title-position bs">
@@ -205,7 +206,7 @@
             <section class="aqua text-light" id="skills">
                 <h2 class="heading">
                     <i class="fa fa-wrench fa-fw custom-title-icon"></i>
-                    Developer Skills
+                    Laravel, PHP & API Skills
                 </h2>
 
                 <div class="row">
@@ -397,7 +398,7 @@
             <section class="blue" id="services">
                 <h2 class="heading">
                     <i class="fa fa-cogs fa-fw custom-title-icon"></i>
-                    Services
+                    Laravel Development Services
                 </h2>
                 <div class="row justify-content-md-center text-center bs d-flex flex-wrap">
                     <div class="card-wrapper col-12 col-lg-6 col-md-6 mb-3 bs d-flex">
@@ -484,7 +485,7 @@
                 <div class="container">
                     <h2 class="heading mb-3">
                         <i class="fa fa-envelope fa-fw custom-title-icon"></i>
-                        Contact
+                        Contact a Laravel Developer
                     </h2>
                     <div class="text-success my-3">
                         I&#39;m available for work
