@@ -9,9 +9,8 @@
   "license": "MIT",
   "require": {
     "php": "^8.2",
-    "blendbyte/filament-title-with-slug": "dev-fila4",
-    "filament/filament": "^4.0",
-    "joaopaulolndev/filament-edit-profile": "2.x-dev",
+    "filament/filament": "^5.0",
+    "joaopaulolndev/filament-edit-profile": "^3.0",
     "laravel/framework": "^12.0",
     "laravel/tinker": "^2.9",
     "spatie/laravel-honeypot": "^4.5"

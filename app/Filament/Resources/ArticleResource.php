@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ArticleResource\Pages;
 use App\Models\Article;
-use Camya\Filament\Forms\Components\TitleWithSlugInput;
+use Filament\Forms\Set;
 use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
@@ -34,10 +34,13 @@ class ArticleResource extends Resource
     {
         return $schema
             ->components([
-                TitleWithSlugInput::make(
-                    fieldTitle: 'title', // The name of the field in your model that stores the title.
-                    fieldSlug: 'slug',
-                ),
+                TextInput::make('title')
+                    ->required()
+                    ->live(onBlur: true)
+                    ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                TextInput::make('slug')
+                    ->required()
+                    ->unique(Article::class, 'slug', ignoreRecord: true),
                 FileUpload::make('image')
                     ->image()
                     ->disk('public')

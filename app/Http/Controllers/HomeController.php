@@ -19,7 +19,10 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        $experiences = Experience::with('tags')->orderBy('id', 'desc')->get();
+        $experiences = Experience::with('tags')
+            ->orderByRaw('CASE WHEN end_date IS NULL THEN 0 ELSE 1 END')
+            ->orderBy('start_date', 'desc')
+            ->get();
         $contributions = Contribution::with('tags')->get();
         $testimonials = Testimonial::where('is_active', true)
             ->orderBy('order')
