@@ -15,28 +15,4 @@ class CreateArticle extends CreateRecord
 
         ];
     }
-
-    protected function mutateFormDataBeforeCreate(array $data): array
-    {
-        // Ensure publish is boolean
-        if (isset($data['publish'])) {
-            $data['publish'] = (bool) $data['publish'];
-        } else {
-            $data['publish'] = false;
-        }
-
-        // Convert image array to string if needed
-        // FileUpload in Filament returns array even for single file
-        if (isset($data['image']) && is_array($data['image'])) {
-            // Get the first element if array is not empty
-            if (!empty($data['image'])) {
-                $data['image'] = $data['image'][0];
-            } else {
-                // Empty array means no file uploaded, set to null for validation
-                $data['image'] = null;
-            }
-        }
-
-        return $data;
-    }
 }
