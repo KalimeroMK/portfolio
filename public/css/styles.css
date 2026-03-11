@@ -1,9 +1,9 @@
-@import "font-awesome.css";
+@import "font-awesome.min.css";
 @import url(https://fonts.googleapis.com/css?family=Lato:700);
 
 @font-face {
     font-family: "fontawesomeregular";
-    src: url("../fonts/fontawesome-webfont-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont-webfont.woff") format("woff");
+    src: url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
