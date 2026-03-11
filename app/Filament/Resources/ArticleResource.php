@@ -140,7 +140,9 @@ class ArticleResource extends Resource
                     ->limit(50),
 
                 ImageColumn::make('image')
-                    ->circular(),
+                    ->disk('public')
+                    ->circular()
+                    ->defaultImageUrl(url('/images/IOS/Icon-64.png')),
 
                 IconColumn::make('publish')
                     ->boolean()
