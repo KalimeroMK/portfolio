@@ -1,79 +1,151 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="en-US">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
     
-    <!-- Dynamic SEO Meta Tags -->
-    <title>{{ $seo['title'] ?? 'Zoran Bogoevski | Web Developer & PHP Expert' }}</title>
-    <meta name="description" content="{{ $seo['description'] ?? 'Experienced PHP & Laravel developer from Macedonia' }}">
-    <meta name="keywords" content="{{ $seo['keywords'] ?? 'web developer, php, laravel, macedonia' }}">
-    <meta name="author" content="{{ $seo['author'] ?? 'Zoran Bogoevski' }}">
-    <meta name="robots" content="{{ $seo['robots'] ?? 'index, follow' }}">
+    <!-- Author -->
+    <meta name="author" content="{{ optional($article)->author ?? 'Zoran Bogoevski' }}">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ url()->current() }}">
+    <!-- Keywords -->
+    <meta name="keywords" content="{{ optional($article)->meta_keywords ?? 'Laravel, PHP, AWS, Software Architecture, Payment Gateways, Casys, Halkbank, SaaS, Fintech, Backend Development, API Development, System Architecture, Senior Software Engineer, Laravel Expert, Macedonian Developer' }}">
     
+    <!-- Robots -->
+    <meta name="robots" content="{{ optional($article)->indexable ?? true ? 'index, follow' : 'noindex, nofollow' }}">
+
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="{{ $seo['og_type'] ?? 'website' }}">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:title" content="{{ $seo['title'] ?? 'Zoran Bogoevski | Web Developer' }}">
-    <meta property="og:description" content="{{ $seo['description'] ?? 'Experienced PHP & Laravel developer' }}">
-    <meta property="og:site_name" content="{{ $seo['og_site_name'] ?? 'Zoran Dev' }}">
-    @if(!empty($seo['og_image']))
-    <meta property="og:image" content="{{ $seo['og_image'] }}">
+    <meta property="og:type" content="{{ !empty($article) ? 'article' : 'website' }}">
+    <meta property="og:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
+    <meta property="og:title" content="{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
+    <meta property="og:description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
+    <meta property="og:image" content="{{ optional($article)->getOgImage() ? asset('storage/' . optional($article)->getOgImage()) : 'https://zbogoevski.github.io/images/social-share.png' }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    @endif
-    @if(!empty($seo['article_published']))
-    <meta property="article:published_time" content="{{ $seo['article_published'] }}">
-    <meta property="article:modified_time" content="{{ $seo['article_modified'] }}">
-    <meta property="article:author" content="{{ $seo['author'] }}">
-    @endif
-    @if(!empty($seo['article_tags']))
-    <meta property="article:tag" content="{{ $seo['article_tags'] }}">
-    @endif
+    <meta property="og:site_name" content="Zoran Bogoevski - Laravel Expert">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="{{ $seo['twitter_card'] ?? 'summary_large_image' }}">
-    <meta name="twitter:site" content="{{ $seo['twitter_site'] ?? '@zorandev' }}">
-    <meta name="twitter:title" content="{{ $seo['title'] ?? 'Zoran Bogoevski' }}">
-    <meta name="twitter:description" content="{{ $seo['description'] ?? 'PHP & Laravel Developer' }}">
-    @if(!empty($seo['og_image']))
-    <meta name="twitter:image" content="{{ $seo['og_image'] }}">
-    @endif
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
+    <meta name="twitter:title" content="{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
+    <meta name="twitter:description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
+    <meta name="twitter:image" content="{{ optional($article)->getOgImage() ? asset('storage/' . optional($article)->getOgImage()) : 'https://zbogoevski.github.io/images/social-share.png' }}">
 
-    <!-- Language & Geo -->
-    <meta http-equiv="content-language" content="en">
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="{{ !empty($article) ? route('article', $article->slug) : url()->current() }}">
+    
+    <!-- Language -->
+    <meta http-equiv="content-language" content="en-US">
+    
+    <!-- Geo Tags (Optional - for Macedonian market) -->
     <meta name="geo.region" content="MK">
-    <meta name="geo.placename" content="Skopje">
+    <meta name="geo.placename" content="North Macedonia">
 
-    <!-- Favicon -->
+    <!-- Favicon for Various Platforms -->
+    <!-- Standard Favicon -->
     <link rel="icon" href="{{ asset('images/IOS/Icon-32.png') }}" sizes="32x32" type="image/png">
     <link rel="icon" href="{{ asset('images/IOS/Icon-64.png') }}" sizes="64x64" type="image/png">
-    <link rel="apple-touch-icon" href="{{ asset('images/IOS/Icon-180.png') }}">
 
-    <!-- CSS Styles -->
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <!-- Apple Touch Icon for iOS -->
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-152.png') }}" sizes="152x152">
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-167.png') }}" sizes="167x167">
+    <link rel="apple-touch-icon" href="{{ asset('images/iOS/Icon-180.png') }}" sizes="180x180">
+
+    <!-- Android Icons -->
+    <link rel="icon" href="{{ asset('images/Android/Icon-36.png') }}" sizes="36x36" type="image/png">
+    <link rel="icon" href="{{ asset('images/Android/Icon-96.png') }}" sizes="96x96" type="image/png">
+    <link rel="icon" href="{{ asset('images/Android/Icon-192.png') }}" sizes="192x192" type="image/png">
+
+    <!-- Manifest for Progressive Web App (PWA) -->
+    <link rel="manifest" href="{{ asset('manifest.json') }}">
+
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    
-    <!-- Preconnect to external domains for performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Structured Data (JSON-LD) -->
-    @if(!empty($structuredData))
+    <link rel="stylesheet" href="{{ asset('css/style-cf.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
-    {!! json_encode($structuredData, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES) !!}
+        {!! json_encode([
+            '@context' => 'https://schema.org',
+            '@graph' => [
+                [
+                    '@type' => 'Person',
+                    '@id' => 'https://zorandev.info/#person',
+                    'name' => 'Zoran Bogoevski',
+                    'jobTitle' => 'Senior Laravel Developer',
+                    'url' => 'https://zorandev.info',
+                    'image' => 'https://zbogoevski.github.io/images/social-share.png',
+                    'description' => 'Senior Laravel Developer specializing in backend architecture and fintech integrations.',
+                    'sameAs' => [
+                        'https://github.com/kalimeromk',
+                        'https://www.linkedin.com/in/zoran-bogoevski/',
+                        'https://x.com/zaebalovek'
+                    ],
+                    'knowsAbout' => [
+                        'Laravel',
+                        'PHP',
+                        'AWS',
+                        'Software Architecture',
+                        'Payment Gateways',
+                        'Casys',
+                        'Halkbank',
+                        'SaaS',
+                        'Fintech',
+                        'Backend Development',
+                        'API Development',
+                        'System Architecture'
+                    ]
+                ],
+                [
+                    '@type' => 'Organization',
+                    '@id' => 'https://zorandev.info/#organization',
+                    'name' => 'Zoran Bogoevski',
+                    'url' => 'https://zorandev.info',
+                    'logo' => 'https://zbogoevski.github.io/images/social-share.png',
+                    'sameAs' => [
+                        'https://github.com/kalimeromk',
+                        'https://www.linkedin.com/in/zoran-bogoevski/',
+                        'https://x.com/zaebalovek'
+                    ]
+                ],
+                [
+                    '@type' => 'WebSite',
+                    '@id' => 'https://zorandev.info/#website',
+                    'url' => 'https://zorandev.info',
+                    'name' => 'Zoran Bogoevski - Senior Laravel Developer',
+                    'publisher' => [
+                        '@id' => 'https://zorandev.info/#organization'
+                    ],
+                    'inLanguage' => 'en-US'
+                ]
+            ]
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT) !!}
     </script>
-    @endif
-
-    @stack('styles')
 </head>
-<body>
+
+
+<body class="clearfix">
+<!-- page loading -->
+<div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+</div>
+<!-- End -->
+<main>
     @yield('content')
-    
-    @stack('scripts')
+</main>
+<!-- Footer -->
+@include('layout.footer')
+
+<!-- button -->
+<a href="#top_" id="myBtn" title="Go to top">
+    <!-- SVG code -->
+</a>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" defer></script>
+<script src="{{ asset('js/bootstrap.min.js') }}" defer></script>
+<script src="{{ asset('js/main.js') }}" defer></script>
+@yield('scripts')
 </body>
 </html>
