@@ -14,6 +14,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
@@ -50,13 +51,41 @@ class HomeController extends Controller
 
     public function articles(): View
     {
-        $articles = Article::with('tags')->get();
+        $articles = Article::published()
+            ->with('tags')
+            ->orderBy('created_at', 'desc')
+            ->get();
+        
         return view('articles', compact('articles'));
     }
 
     public function article(string $slug): View
     {
-        $article = Article::whereSlug($slug)->firstOrFail();
+        $article = Article::whereSlug($slug)
+            ->published()
+            ->firstOrFail();
+        
+        // Set SEO data for this specific article
+        $seo = [
+            'title' => $article->getMetaTitle(),
+            'description' => $article->getMetaDescription(),
+            'keywords' => $article->meta_keywords ?? '',
+            'author' => 'Zoran Bogoevski',
+            'robots' => $article->indexable ? 'index, follow' : 'noindex, nofollow',
+            'og_type' => 'article',
+            'og_site_name' => 'Zoran Dev',
+            'og_image' => $article->getOgImage() ? asset($article->getOgImage()) : null,
+            'twitter_card' => 'summary_large_image',
+            'twitter_site' => '@zorandev',
+            'article_published' => $article->created_at?->toIso8601String(),
+            'article_modified' => $article->updated_at?->toIso8601String(),
+            'article_tags' => $article->tags->pluck('name')->implode(', '),
+        ];
+        
+        // Share SEO data with view
+        View::share('seo', $seo);
+        View::share('structuredData', $article->getStructuredData());
+        
         return view('article', compact('article'));
     }
 
@@ -70,10 +99,40 @@ class HomeController extends Controller
 
     public function sitemap(): Response
     {
-        $articles = Article::latest()->get();
+        $articles = Article::published()
+            ->indexable()
+            ->latest()
+            ->get();
+        
+        $staticPages = [
+            ['url' => '/', 'priority' => '1.0', 'changefreq' => 'weekly'],
+            ['url' => '/articles', 'priority' => '0.8', 'changefreq' => 'weekly'],
+            ['url' => '/testimonials', 'priority' => '0.6', 'changefreq' => 'monthly'],
+        ];
 
         return response()->view('sitemap', [
             'articles' => $articles,
+            'staticPages' => $staticPages,
         ])->header('Content-Type', 'text/xml');
+    }
+    
+    /**
+     * robots.txt for search engine crawlers
+     */
+    public function robots(): Response
+    {
+        $content = "User-agent: *\n";
+        $content .= "Allow: /\n";
+        $content .= "\n";
+        $content .= "# Sitemap\n";
+        $content .= "Sitemap: " . url('sitemap.xml') . "\n";
+        $content .= "\n";
+        $content .= "# Disallow admin areas if any\n";
+        $content .= "Disallow: /admin\n";
+        $content .= "Disallow: /login\n";
+        
+        return response($content, 200, [
+            'Content-Type' => 'text/plain',
+        ]);
     }
 }

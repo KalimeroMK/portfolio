@@ -9,3 +9,4 @@ Route::get('articles', [HomeController::class, 'articles'])->name('articles');
 Route::get('articles/{slug}', [HomeController::class, 'article'])->name('article');
 Route::get('testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
 Route::get('sitemap.xml', [HomeController::class, 'sitemap'])->name('sitemap');
+Route::get('robots.txt', [HomeController::class, 'robots'])->name('robots');
