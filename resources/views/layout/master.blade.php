@@ -3,36 +3,45 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}</title>
+    @php
+        $seoTitle = isset($article) && $article ? $article->getMetaTitle() : 'Zoran Bogoevski | Senior Laravel Developer & PHP API';
+        $seoDesc = isset($article) && $article ? $article->getMetaDescription() : 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).';
+        $seoAuthor = isset($article) && $article ? ($article->author ?? 'Zoran Bogoevski') : 'Zoran Bogoevski';
+        $seoKeywords = isset($article) && $article ? ($article->meta_keywords ?? 'Laravel, PHP, AWS, Software Architecture, Payment Gateways, Casys, Halkbank, SaaS, Fintech, Backend Development, API Development, System Architecture, Senior Software Engineer, Laravel Expert, Macedonian Developer') : 'Laravel, PHP, AWS, Software Architecture, Payment Gateways, Casys, Halkbank, SaaS, Fintech, Backend Development, API Development, System Architecture, Senior Software Engineer, Laravel Expert, Macedonian Developer';
+        $seoIndexable = isset($article) && $article ? ($article->indexable ?? true) : true;
+        $seoOgImage = isset($article) && $article && $article->getOgImage() ? asset('storage/' . $article->getOgImage()) : 'https://zbogoevski.github.io/images/social-share.png';
+    @endphp
+
+    <title>{{ $seoTitle }}</title>
 
     <!-- Meta Description -->
-    <meta name="description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
+    <meta name="description" content="{{ $seoDesc }}">
     
     <!-- Author -->
-    <meta name="author" content="{{ optional($article)->author ?? 'Zoran Bogoevski' }}">
+    <meta name="author" content="{{ $seoAuthor }}">
     
     <!-- Keywords -->
-    <meta name="keywords" content="{{ optional($article)->meta_keywords ?? 'Laravel, PHP, AWS, Software Architecture, Payment Gateways, Casys, Halkbank, SaaS, Fintech, Backend Development, API Development, System Architecture, Senior Software Engineer, Laravel Expert, Macedonian Developer' }}">
+    <meta name="keywords" content="{{ $seoKeywords }}">
     
     <!-- Robots -->
-    <meta name="robots" content="{{ optional($article)->indexable ?? true ? 'index, follow' : 'noindex, nofollow' }}">
+    <meta name="robots" content="{{ $seoIndexable ? 'index, follow' : 'noindex, nofollow' }}">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="{{ !empty($article) ? 'article' : 'website' }}">
-    <meta property="og:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
-    <meta property="og:title" content="{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
-    <meta property="og:description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
-    <meta property="og:image" content="{{ optional($article)->getOgImage() ? asset('storage/' . optional($article)->getOgImage()) : 'https://zbogoevski.github.io/images/social-share.png' }}">
+    <meta property="og:type" content="{{ isset($article) && $article ? 'article' : 'website' }}">
+    <meta property="og:url" content="{{ isset($article) && $article ? route('article', $article->slug) : 'https://zorandev.info' }}">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDesc }}">
+    <meta property="og:image" content="{{ $seoOgImage }}">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="Zoran Bogoevski - Laravel Expert">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="{{ !empty($article) ? route('article', $article->slug) : 'https://zorandev.info' }}">
-    <meta name="twitter:title" content="{{ optional($article)->getMetaTitle() ?? 'Zoran Bogoevski | Senior Laravel Developer & PHP API' }}">
-    <meta name="twitter:description" content="{{ optional($article)->getMetaDescription() ?? 'Senior Laravel Developer with 15+ years of experience. Expert in SaaS architecture, AWS, and fintech payment gateway integrations (Casys, Halkbank).' }}">
-    <meta name="twitter:image" content="{{ optional($article)->getOgImage() ? asset('storage/' . optional($article)->getOgImage()) : 'https://zbogoevski.github.io/images/social-share.png' }}">
+    <meta name="twitter:url" content="{{ isset($article) && $article ? route('article', $article->slug) : 'https://zorandev.info' }}">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDesc }}">
+    <meta name="twitter:image" content="{{ $seoOgImage }}">
 
     <!-- Canonical Tag -->
     <link rel="canonical" href="{{ !empty($article) ? route('article', $article->slug) : url()->current() }}">
