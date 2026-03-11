@@ -117,15 +117,16 @@ class ArticleResource extends Resource
                                             ->helperText('Advanced: Custom JSON-LD structured data. Leave empty for auto-generated Article schema.'),
                                     ]),
                             ]),
+                        
+                        Tab::make('Publishing')
+                            ->icon('heroicon-o-check-circle')
+                            ->schema([
+                                Checkbox::make('publish')
+                                    ->label('Published')
+                                    ->default(false),
+                            ]),
                     ])
                     ->columnSpanFull(),
-                
-                Section::make('Publishing')
-                    ->schema([
-                        Checkbox::make('publish')
-                            ->label('Published')
-                            ->default(false),
-                    ]),
             ]);
     }
 
