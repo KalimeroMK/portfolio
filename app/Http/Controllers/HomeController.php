@@ -14,7 +14,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\View\View;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\View;
+
 
 class HomeController extends Controller
 {
