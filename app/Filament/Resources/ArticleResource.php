@@ -13,6 +13,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Tabs;
+use Filament\Forms\Components\Tabs\Tab;
 use Filament\Schemas\Schema;
 use Filament\Resources\Resource;
 use Filament\Actions\BulkActionGroup;
@@ -40,7 +41,7 @@ class ArticleResource extends Resource
             ->components([
                 Tabs::make('Article')
                     ->tabs([
-                        Tabs\Tab::make('Content')
+                        Tab::make('Content')
                             ->icon('heroicon-o-document-text')
                             ->schema([
                                 TextInput::make('title')
@@ -66,7 +67,7 @@ class ArticleResource extends Resource
                                     ->preload(),
                             ]),
                         
-                        Tabs\Tab::make('SEO')
+                        Tab::make('SEO')
                             ->icon('heroicon-o-magnifying-glass')
                             ->schema([
                                 Section::make('Meta Information')
