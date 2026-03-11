@@ -56,9 +56,9 @@
 
                 </div>
                 <div class="d-flex justify-content-center justify-content-sm-start my-4 flex-wrap nav-buttons-wrapper">
-                    <a class="btn btn-outline-light btn-lg" href="{{ route('articles') }}">Articles</a>
+                    <a class="btn btn-outline-light btn-lg" href="{{ route('home') }}#contact">Hire Me</a>
+                    <a class="btn btn-outline-light btn-lg" href="mailto:zbogoevski@gmail.com">Book Consultation</a>
                     <a class="btn btn-outline-light btn-lg" href="{{ route('testimonials') }}">Testimonials</a>
-                    <a class="btn btn-outline-light btn-lg" href="#contact">Contact</a>
                 </div>
 
             </div>
