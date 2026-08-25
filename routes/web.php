@@ -2,9 +2,10 @@
 
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::post('send-contact', [HomeController::class, 'send'])->name('contact');
+Route::post('send-contact', [HomeController::class, 'send'])->middleware(ProtectAgainstSpam::class)->name('contact');
 Route::get('articles', [HomeController::class, 'articles'])->name('articles');
 Route::get('articles/{slug}', [HomeController::class, 'article'])->name('article');
 Route::get('testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
