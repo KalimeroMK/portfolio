@@ -209,87 +209,78 @@
                     Laravel, PHP & API Skills
                 </h2>
 
-                <div class="row">
-                    <div class="col-md-12 section-content">
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Backend</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">PHP</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Laravel</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Yii</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Slim 4</span>
-                            </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Backend</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">PHP</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Laravel</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Yii</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Slim 4</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Architecture</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">DDD</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Modular Monolith</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">SOLID</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">REST</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">GraphQL</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Microservices</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">SOA</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Architecture</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">DDD</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Modular Monolith</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">SOLID</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">REST</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">GraphQL</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Microservices</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">SOA</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Data</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">MySQL</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">MariaDB</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">MongoDB</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Redis</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Elasticsearch</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Data</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">MySQL</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">MariaDB</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">MongoDB</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Redis</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Elasticsearch</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Quality</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Pest</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">PHPUnit</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">PHPStan</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Laravel Pint</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Rector</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">TDD</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Quality</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Pest</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">PHPUnit</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">PHPStan</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Laravel Pint</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Rector</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">TDD</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">DevOps</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Docker</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">GitHub Actions</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Jenkins</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">AWS</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Nginx</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Apache</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Linux</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">DevOps</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Docker</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">GitHub Actions</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Jenkins</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">AWS</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Nginx</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Apache</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Linux</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Integrations</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Stripe</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">PayPal</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Casys</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Halkbank</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Integrations</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Stripe</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">PayPal</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Casys</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Halkbank</span>
                         </div>
-
-                        <div class="mb-4">
-                            <h6 class="text-uppercase fw-bold mb-2">Frontend</h6>
-                            <div class="d-flex flex-wrap gap-2">
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Blade</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">Twig</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">JavaScript</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">HTML5</span>
-                                <span class="badge rounded-pill bg-light text-dark fw-normal px-3 py-2">CSS3</span>
-                            </div>
+                    </div>
+                    <div class="col">
+                        <h6 class="text-uppercase fw-bold mb-2" style="font-size:.85rem;letter-spacing:.08em;opacity:.7;">Frontend</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Blade</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">Twig</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">JavaScript</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">HTML5</span>
+                            <span class="d-inline-block border border-dark rounded-pill px-3 py-1" style="font-size:.95rem;line-height:1.6;">CSS3</span>
                         </div>
                     </div>
                 </div>
