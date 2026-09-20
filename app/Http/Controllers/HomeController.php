@@ -24,7 +24,8 @@ class HomeController extends Controller
             ->orderByRaw("CASE WHEN company = 'Upwork' THEN 2 WHEN end_date IS NULL THEN 0 ELSE 1 END")
             ->orderBy('start_date', 'desc')
             ->get();
-        $contributions = Contribution::with('tags')->get();
+        $upstreamContributions = Contribution::with('tags')->upstream()->get();
+        $ownPackages = Contribution::with('tags')->packages()->get();
         $testimonials = Testimonial::where('is_active', true)
             ->orderBy('order')
             ->get();
@@ -32,7 +33,7 @@ class HomeController extends Controller
         $user = User::first();
         $customFields = $user ? ($user->custom_fields ?? []) : [];
 
-        return view('index', compact('experiences', 'contributions', 'testimonials', 'customFields'));
+        return view('index', compact('experiences', 'upstreamContributions', 'ownPackages', 'testimonials', 'customFields'));
     }
 
     public function send(CreateRequest $request): RedirectResponse

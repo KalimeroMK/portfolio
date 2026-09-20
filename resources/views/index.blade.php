@@ -147,16 +147,21 @@
                         <p>
                             Contributing to open source is not just about code—it's about building solutions that help developers solve real-world problems. Here are some of my open source contributions:
                         </p>
-                        @foreach($contributions as $contribution)
+                        @foreach([['Contributions to projects maintained by others', $upstreamContributions], ['Packages and projects of my own', $ownPackages]] as [$groupTitle, $groupItems])
+                            @if($groupItems->isNotEmpty())
+                                <h3 class="h5 mt-4 mb-3">{{ $groupTitle }}</h3>
+                                @foreach($groupItems as $contribution)
                             <div class="timeline-content right bs">
                                 <div class="company-info d-flex align-items-center py-2 bs">
-                                    <a href="{{ $contribution->url }}">
+                                    @if($contribution->image)
+                                        <a href="{{ $contribution->url }}">
                                 <span class="company-logo pr-3 bs">
                         <img alt="{{ $contribution->title }} logo" class="img-responsive rounded-circle bs"
                              src="{{ asset('storage/' . $contribution->image) }}"
                              width="65" height="65" loading="lazy" decoding="async">
                             </span>
-                                    </a>
+                                        </a>
+                                    @endif
                                     <span class="company-title-position bs">
                         <h6 class="h5 mt-2 mb-0">
                             <a href="{{ $contribution->url }}"> {{ $contribution->title }}</a>
@@ -173,6 +178,8 @@
                                 </div>
                             </div>
                             <hr>
+                                @endforeach
+                            @endif
                         @endforeach
                     </div>
                 </div>

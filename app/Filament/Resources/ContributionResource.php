@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Enums\ContributionType;
 use App\Filament\Resources\ContributionResource\Pages;
 use App\Models\Contribution;
 use Filament\Forms\Components\FileUpload;
@@ -16,6 +17,7 @@ use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\EditAction;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use BackedEnum;
 
@@ -33,10 +35,16 @@ class ContributionResource extends Resource
             ->components([
                 TextInput::make('title')
                     ->required(),
+                Select::make('type')
+                    ->options(fn (): array => collect(ContributionType::cases())
+                        ->mapWithKeys(fn (ContributionType $type): array => [$type->value => $type->label()])
+                        ->all())
+                    ->default(ContributionType::Package->value)
+                    ->required(),
                 TextInput::make('url')
                     ->required(),
                 FileUpload::make('image')
-                    ->required(),
+                    ->nullable(),
                 RichEditor::make('description')
                     ->required()->columnSpanFull()
                     ->nullable(),
@@ -55,13 +63,20 @@ class ContributionResource extends Resource
                 TextColumn::make('title')
                     ->searchable()
                     ->sortable(),
+                TextColumn::make('type')
+                    ->badge()
+                    ->formatStateUsing(fn (ContributionType $state): string => $state->label())
+                    ->sortable(),
                 TextColumn::make('url'),
                 TextColumn::make('description')
                     ->limit(50),
                 ImageColumn::make('image'),
             ])
             ->filters([
-                //
+                SelectFilter::make('type')
+                    ->options(fn (): array => collect(ContributionType::cases())
+                        ->mapWithKeys(fn (ContributionType $type): array => [$type->value => $type->label()])
+                        ->all()),
             ])
             ->actions([
                 EditAction::make(),
