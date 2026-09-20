@@ -147,10 +147,21 @@
                         <p>
                             Contributing to open source is not just about code—it's about building solutions that help developers solve real-world problems. Here are some of my open source contributions:
                         </p>
-                        @foreach([['Contributions to projects maintained by others', $upstreamContributions], ['Packages and projects of my own', $ownPackages]] as [$groupTitle, $groupItems])
-                            @if($groupItems->isNotEmpty())
-                                <h3 class="h5 mt-4 mb-3">{{ $groupTitle }}</h3>
-                                @foreach($groupItems as $contribution)
+                        @if($upstreamContributions->isNotEmpty())
+                            <h3 class="h5 mt-4 mb-3">Contributions to projects maintained by others</h3>
+                            <ul class="contribution-list bs">
+                                @foreach($upstreamContributions as $contribution)
+                                    <li class="pb-2">
+                                        <a href="{{ $contribution->url }}">{{ $contribution->title }}</a>
+                                        — {!! $contribution->description !!}
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @endif
+
+                        @if($ownPackages->isNotEmpty())
+                            <h3 class="h5 mt-4 mb-3">Packages and projects of my own</h3>
+                            @foreach($ownPackages as $contribution)
                             <div class="timeline-content right bs">
                                 <div class="company-info d-flex align-items-center py-2 bs">
                                     @if($contribution->image)
@@ -178,9 +189,8 @@
                                 </div>
                             </div>
                             <hr>
-                                @endforeach
-                            @endif
-                        @endforeach
+                            @endforeach
+                        @endif
                     </div>
                 </div>
             </section>

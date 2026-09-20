@@ -17,17 +17,66 @@ class ContributionSeeder extends Seeder
         $contributions = [
             [
                 'type' => 'upstream',
-                'title' => 'Laravel Framework',
-                'url' => 'https://github.com/laravel/framework/pulls?q=is%3Apr+author%3AKalimeroMK',
-                'description' => 'Merged PR #61285, which fixed a route name being silently dropped when a RouteRegistrar action is not callable. PR #61646 is under review: attributes written on a named Blade slot were never reachable from the aware directive inside that slot, because they sat in the slot stack instead of the component data the lookup walks.',
-                'tags' => 'Laravel, PHP, Open Source, Blade'
+                'title' => 'php/frankenphp#2615',
+                'url' => 'https://github.com/php/frankenphp/pull/2615',
+                'description' => 'Official <a href="https://frankenphp.dev/docs/yii3/">Yii 3 page</a> for the FrankenPHP docs: Docker image, local Caddyfile setup and worker mode via <code>yiisoft/yii-runner-frankenphp</code>',
+                'tags' => ''
             ],
             [
                 'type' => 'upstream',
-                'title' => 'Yii 3',
-                'url' => 'https://github.com/yiisoft/db/pulls?q=is%3Apr+author%3AKalimeroMK+is%3Amerged',
-                'description' => 'Eleven merged pull requests across the Yii 3 database and HTTP packages. Added the UuidValue expression to yiisoft/db for DBMS-independent UUID binding, together with the MySQL, SQLite and Oracle driver implementations. Also contributed SerializationFailureException for SQLSTATE 40001 deadlocks, ETag normalization in HttpCacheMiddleware, backed enumerations as route names in yiisoft/router, and Sentry cron monitoring through check-ins.',
-                'tags' => 'Yii, PHP, Open Source, Databases'
+                'title' => 'yiisoft/db#1199',
+                'url' => 'https://github.com/yiisoft/db/pull/1199',
+                'description' => 'Add <code>UuidValue</code> for portable UUID binding, with driver builders in <a href="https://github.com/yiisoft/db-mysql/pull/482">db-mysql#482</a>, <a href="https://github.com/yiisoft/db-sqlite/pull/432">db-sqlite#432</a> and <a href="https://github.com/yiisoft/db-oracle/pull/411">db-oracle#411</a>',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/router#296',
+                'url' => 'https://github.com/yiisoft/router/pull/296',
+                'description' => 'Allow backed enumerations as route name in <code>Route::name()</code>',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/db#1196',
+                'url' => 'https://github.com/yiisoft/db/pull/1196',
+                'description' => 'Add <code>SerializationFailureException</code> for SQLSTATE 40001',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/http-middleware#31',
+                'url' => 'https://github.com/yiisoft/http-middleware/pull/31',
+                'description' => 'Add ETag value normalization to <code>HttpCacheMiddleware</code>',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'laravel/framework#61285',
+                'url' => 'https://github.com/laravel/framework/pull/61285',
+                'description' => 'Fix route name lost when <code>RouteRegistrar</code> action is not callable (Laravel 13)',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/db#1190',
+                'url' => 'https://github.com/yiisoft/db/pull/1190',
+                'description' => 'Index schema metadata by table name',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/yii-sentry#52',
+                'url' => 'https://github.com/yiisoft/yii-sentry/pull/52',
+                'description' => 'Sentry cron monitoring via check-ins',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'yiisoft/db-migration#356',
+                'url' => 'https://github.com/yiisoft/db-migration/pull/356',
+                'description' => 'Friendly error with ready-to-use <code>cp</code> command when running <code>yii-db-migration</code> without config',
+                'tags' => ''
             ],
             [
                 'type' => 'package',
@@ -79,13 +128,6 @@ class ContributionSeeder extends Seeder
                 'tags' => 'Laravel, PHP, JSON'
             ],
             [
-                'type' => 'upstream',
-                'title' => 'FrankenPHP: Yii 3 documentation',
-                'url' => 'https://frankenphp.dev/docs/yii3/',
-                'description' => 'Wrote the official Yii 3 page for the FrankenPHP documentation, requested by the Yii core team. It covers running a Yii 3 app on the FrankenPHP Docker image, a local install with a Caddyfile, and worker mode via the yiisoft/yii-runner-frankenphp package, including the watch directive, the MAX_REQUESTS variable, and resetting stateful services between requests. Merged into php/frankenphp as PR #2615.',
-                'tags' => 'Yii, PHP, FrankenPHP, Docker, Open Source, Technical Writing'
-            ],
-            [
                 'type' => 'package',
                 'title' => 'Docker Images',
                 'url' => 'https://github.com/KalimeroMK/docker-images',
@@ -103,7 +145,7 @@ class ContributionSeeder extends Seeder
                 'url' => $contribution['url'],
             ]);
 
-            $tags = explode(', ', $contribution['tags']);
+            $tags = array_filter(explode(', ', $contribution['tags']));
             foreach ($tags as $tagName) {
                 $tag = Tag::firstOrCreate(['name' => $tagName]);
                 $newContribution->tags()->attach($tag->id); // Attach the tag to the experience in the pivot table
