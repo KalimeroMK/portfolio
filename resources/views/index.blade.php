@@ -82,7 +82,7 @@
             <!--        ########### ABOUT ME SECTION END ##################-->
 
             <!--        ########### OPEN SOURCE SECTION START ##################-->
-            <section class="bg__javascript2" id="contributions">
+            <section class="bg__javascript2" id="certification">
                 <h2 class="heading">
                     <i class="fa fa-code-branch fa-fw custom-title-icon"></i>
                     Open Source Contributions
