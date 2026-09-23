@@ -127,20 +127,6 @@ class ContributionSeeder extends Seeder
                 'description' => 'Address commonly face the problem of adding repetitive filtering code.',
                 'tags' => 'Laravel, PHP'
             ],
-            [
-                'type' => 'package',
-                'title' => 'Dom Parser',
-                'url' => 'https://github.com/KalimeroMK/Htmldom',
-                'description' => 'Simple Html Dom Parser for Laravel.',
-                'tags' => 'Laravel, PHP, JSON'
-            ],
-            [
-                'type' => 'package',
-                'title' => 'Docker Images',
-                'url' => 'https://github.com/KalimeroMK/docker-images',
-                'description' => 'Apache/Nginx + PHP docker image collection.',
-                'tags' => 'Laravel, Blade, OOP PHP, JavaScript, HTML5, CSS / CSS3'
-            ],
 
         ];
 
