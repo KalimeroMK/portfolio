@@ -127,6 +127,27 @@ class ContributionSeeder extends Seeder
                 'description' => 'Address commonly face the problem of adding repetitive filtering code.',
                 'tags' => 'Laravel, PHP'
             ],
+            [
+                'type' => 'package',
+                'title' => 'Email Check',
+                'url' => 'https://github.com/KalimeroMK/email-check',
+                'description' => 'Advanced PHP email validation library with multi-layered verification: syntax, domain validity, MX records, SPF, DMARC and disposable email detection, with configurable caching and parallel processing for mass validation.',
+                'tags' => 'PHP, Laravel'
+            ],
+            [
+                'type' => 'package',
+                'title' => 'Postal Tracking',
+                'url' => 'https://github.com/KalimeroMK/postal-tracking-package',
+                'description' => 'Lightweight PHP library for tracking postal shipments from Posta na Severna Makedonija, with multi-framework support (Laravel, Yii, native PHP), automatic data transformation and real-time tracking capabilities.',
+                'tags' => 'Laravel, Yii, PHP'
+            ],
+            [
+                'type' => 'package',
+                'title' => 'SEMrush PHP SDK',
+                'url' => 'https://github.com/KalimeroMK/SEMrush',
+                'description' => 'Framework-agnostic PHP SDK for the SEMrush API v3/v4 — Analytics, Trends, Projects and Local API.',
+                'tags' => 'PHP, API'
+            ],
 
         ];
 
