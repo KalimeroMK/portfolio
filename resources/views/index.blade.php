@@ -1,4 +1,3 @@
-@php use Carbon\Carbon; @endphp
 @extends('layout.master')
 @section('content')
     <div class="main-wrapper" id="top_">
@@ -82,73 +81,18 @@
             </section>
             <!--        ########### ABOUT ME SECTION END ##################-->
 
-            <!--        ########### EXPERIENCE SECTION START ##################-->
-            <section class="bg__javascript2" id="experience">
+            <!--        ########### OPEN SOURCE SECTION START ##################-->
+            <section class="bg__javascript2" id="contributions">
                 <h2 class="heading">
-                    <i class="fa fa-briefcase fa-fw custom-title-icon"></i>
-                    Laravel & PHP Experience
-                </h2>
-                <div id="timeline">
-                    @foreach($experiences as $experience)
-                        <div class="timeline-item clearfix">
-                            <div class="timeline-icon"></div>
-                            <div class="timeline-content right">
-                                <span
-                                        class="date">{{ Carbon::parse($experience->start_date)->format('F Y') }}
- - {{ $experience->end_date ? Carbon::parse($experience->end_date)->format('F Y') : 'Present' }}
-
-</span>
-                                <div class="company-info d-flex align-items-center py-2">
-                    <span class="company-logo">
-                        <img alt="{{ $experience->company }} logo"
-                             class="img-responsive rounded-circle" src="{{ asset('storage/' . $experience->image) }}"
-                             width="65" height="65" loading="lazy" decoding="async"/>
-                    </span>
-                                    <span class="company-title-position">
-                        <h6 class="h5 mt-2 mb-0">
-                            {{ $experience->company }}
-                        </h6>
-                        <span class="h6 my-1 text-uppercase">
-                            {{ $experience->position }}
-                        </span>
-                        <br/>
-                        <span class="lead my-1">
-                            {{ $experience->employment_type }}
-                        </span>
-                    </span>
-                                </div>
-                                <div class="employee-tasks section-content text-justify" id="axModule">
-                                    <p class="pt-2">{!! $experience->description !!}</p>
-
-                                    <div class="badges-container">
-                                        @foreach($experience->tags as $tag)
-                                            <span
-                                                    class="badge badge-pill badge-custom py-2 px-3 mb-2">{{ $tag->name}}</span>
-                                        @endforeach
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                    @endforeach
-                </div>
-            </section>
-            <!--        ########### EXPERIENCE SECTION END ##################-->
-            <!--        ########### CERTIFICATES SECTION START ##################-->
-            <section class="bg__javascript2" id="certification">
-                <h2 class="heading">
-                    <i class="fa fa-certificate fa-fw custom-title-icon"></i>
+                    <i class="fa fa-code-branch fa-fw custom-title-icon"></i>
                     Open Source Contributions
                 </h2>
                 <div class="row">
                     <div class="col-md-12 section-content">
                         <p>
-                            Contributing to open source is not just about code—it's about building solutions that help developers solve real-world problems. Here are some of my open source contributions:
+                            Merged pull requests in the frameworks I work with every day — Symfony, Laravel, Yii — plus packages of my own:
                         </p>
                         @if($upstreamContributions->isNotEmpty())
-                            <h3 class="h5 mt-4 mb-3">Contributions to projects maintained by others</h3>
                             <ul class="contribution-list bs">
                                 @foreach($upstreamContributions as $contribution)
                                     <li class="pb-2">
@@ -194,7 +138,7 @@
                     </div>
                 </div>
             </section>
-            <!--        ########### CERTIFICATES SECTION END ##################-->
+            <!--        ########### OPEN SOURCE SECTION END ##################-->
 
             <!--        ########### MACEDONIAN FINTECH SOLUTIONS SECTION START ##################-->
             <section class="blue" id="fintech">

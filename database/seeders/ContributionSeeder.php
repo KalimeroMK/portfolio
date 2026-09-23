@@ -17,6 +17,13 @@ class ContributionSeeder extends Seeder
         $contributions = [
             [
                 'type' => 'upstream',
+                'title' => 'symfony/symfony#66205',
+                'url' => 'https://github.com/symfony/symfony/pull/66205',
+                'description' => 'Review Macedonian (mk) translations for Validator, Form and Security',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
                 'title' => 'php/frankenphp#2615',
                 'url' => 'https://github.com/php/frankenphp/pull/2615',
                 'description' => 'Official <a href="https://frankenphp.dev/docs/yii3/">Yii 3 page</a> for the FrankenPHP docs: Docker image, local Caddyfile setup and worker mode via <code>yiisoft/yii-runner-frankenphp</code>',

@@ -7,7 +7,6 @@ use App\Mail\ContactMail;
 use App\Mail\ResponseMail;
 use App\Models\Article;
 use App\Models\Contribution;
-use App\Models\Experience;
 use App\Models\Testimonial;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -20,10 +19,6 @@ class HomeController extends Controller
 {
     public function index(): View
     {
-        $experiences = Experience::with('tags')
-            ->orderByRaw("CASE WHEN company = 'Upwork' THEN 2 WHEN end_date IS NULL THEN 0 ELSE 1 END")
-            ->orderBy('start_date', 'desc')
-            ->get();
         $upstreamContributions = Contribution::with('tags')->upstream()->get();
         $ownPackages = Contribution::with('tags')->packages()->get();
         $testimonials = Testimonial::where('is_active', true)
@@ -33,7 +28,7 @@ class HomeController extends Controller
         $user = User::first();
         $customFields = $user ? ($user->custom_fields ?? []) : [];
 
-        return view('index', compact('experiences', 'upstreamContributions', 'ownPackages', 'testimonials', 'customFields'));
+        return view('index', compact('upstreamContributions', 'ownPackages', 'testimonials', 'customFields'));
     }
 
     public function send(CreateRequest $request): RedirectResponse
