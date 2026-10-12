@@ -8,7 +8,7 @@
                                                    src="{{asset('images/me.jpeg') }}" width="160" height="160"
                                                    loading="eager" decoding="async" fetchpriority="high"></a>
                 <h1 class="heading text-white">Hi, I&#39;m <span>Zoran Bogoevski</span> — Senior Laravel Developer</h1>
-                <p class="sub-heading text-white"><span class="">PHP & Laravel Architect</span> | SaaS & API Integrations</p>
+                <p class="sub-heading text-white"><span class="">PHP & Laravel Architect</span> | SaaS & API Integrations | Member of the <a href="https://github.com/yiisoft" class="text-white">Yii organization</a></p>
                 <div class="social my-4">
                     <!-- Github -->
                     <a data-placement="bottom" data-toggle="tooltip" href="https://github.com/kalimeromk" rel="noreferrer" target="_blank" title="Find me on Github">

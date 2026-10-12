@@ -136,6 +136,13 @@ class ContributionSeeder extends Seeder
             ],
             [
                 'type' => 'package',
+                'title' => 'yiisoft/scheduler',
+                'url' => 'https://github.com/yiisoft/scheduler',
+                'description' => 'Recurring tasks and cron-style scheduling for PHP: one cron entry or a long-running worker runs the due tasks, with missed-run catch-up, overlap prevention and failure handling. Written by me and adopted by the Yii organization.',
+                'tags' => 'Yii, PHP'
+            ],
+            [
+                'type' => 'package',
                 'title' => 'RssFeed Laravel Package',
                 'url' => 'https://github.com/KalimeroMK/RssFeed',
                 'description' => 'This package provides an easy way to parse RSS feeds and save them into your application. It offers features like fetching the entire content of an RSS feed, saving images found in the feed items, and getting the full content of each item in the feed. The package is designed to be easy to use and flexible, allowing you to customize the way you parse and save the feed items. It also provides a simple interface for fetching the feed items and displaying them in your application.',
