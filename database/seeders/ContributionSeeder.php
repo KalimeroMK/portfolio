@@ -17,6 +17,55 @@ class ContributionSeeder extends Seeder
         $contributions = [
             [
                 'type' => 'upstream',
+                'title' => 'symfony/symfony#66797',
+                'url' => 'https://github.com/symfony/symfony/pull/66797',
+                'description' => '[Scheduler] Add <code>ExcludeTimeOfDayTrigger</code>, so a recurring task can skip a daily time window such as a nightly maintenance or backup window',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66782',
+                'url' => 'https://github.com/symfony/symfony/pull/66782',
+                'description' => '[Scheduler] Add a <code>stamps</code> option to <code>#[AsCronTask]</code> and <code>#[AsPeriodicTask]</code>, so a scheduled task can carry Messenger stamps',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66781',
+                'url' => 'https://github.com/symfony/symfony/pull/66781',
+                'description' => '[Scheduler] Look inside the <code>Envelope</code> when describing a task, so a wrapped message can use hashed cron expressions and <code>debug:scheduler</code> names the task',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66696',
+                'url' => 'https://github.com/symfony/symfony/pull/66696',
+                'description' => '[Process] Don\'t let inherited <code>SYMFONY_DOTENV_VARS</code> override explicitly passed env vars',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66622',
+                'url' => 'https://github.com/symfony/symfony/pull/66622',
+                'description' => '[Console] Support lists of backed enums in <code>#[Argument]</code> and <code>#[Option]</code> via variadic parameters and <code>list&lt;Enum&gt;</code> PHPDoc types',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66620',
+                'url' => 'https://github.com/symfony/symfony/pull/66620',
+                'description' => '[Process] Fix <code>waitUntil()</code> missing output read by <code>isRunning()</code> on Windows',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
+                'title' => 'symfony/symfony#66211',
+                'url' => 'https://github.com/symfony/symfony/pull/66211',
+                'description' => '[KeyManagement] Let <code>store.max_age</code> express "never rotate" with <code>null</code>',
+                'tags' => ''
+            ],
+            [
+                'type' => 'upstream',
                 'title' => 'symfony/symfony#66205',
                 'url' => 'https://github.com/symfony/symfony/pull/66205',
                 'description' => 'Review Macedonian (mk) translations for Validator, Form and Security',
